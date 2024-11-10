@@ -37,7 +37,7 @@
                 </li>
 
                 <li>
-    <a href="http://localhost/responsive/Responsive%20Admin%20Dashboard%20-%20final/berita/berita.php">
+    <a href="http://localhost/bimbel/berita/berita.php">
         <span class="icon">
             <ion-icon name="newspaper-outline"></ion-icon>
         </span>
@@ -46,7 +46,7 @@
 </li>
 
                 <li>
-                <a href="http://localhost/responsive/Responsive%20Admin%20Dashboard%20-%20final/galeri/galeri.php">
+                <a href="http://localhost/bimbel/galeri/galeri.php">
                         <span class="icon">
                             <ion-icon name="chatbubble-outline"></ion-icon>
                         </span>
@@ -55,7 +55,7 @@
                 </li>
 
                 <li>
-                    <a href="http://localhost/responsive/Responsive%20Admin%20Dashboard%20-%20final/data_guru/data_guru.php">
+                    <a href="http://localhost/bimbel/data_guru/data_guru.php">
                         <span class="icon">
                             <ion-icon name="help-outline"></ion-icon>
                         </span>
@@ -73,11 +73,11 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="http://localhost/bimbel/paket/paket.php">
                         <span class="icon">
                             <ion-icon name="lock-closed-outline"></ion-icon>
                         </span>
-                        <span class="title">Mata Pelajaran</span>
+                        <span class="title">Paket</span>
                     </a>
                 </li>
 
