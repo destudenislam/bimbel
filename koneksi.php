@@ -4,11 +4,11 @@ $username = "root";
 $password = "";
 $dbname = "bimbel";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Periksa koneksi
-if ($conn->connect_error) {
-  die("Koneksi gagal: " . $conn->connect_error);
+if (!$conn) {
+  die("Koneksi gagal: " . mysqli_connect_error());
 }
 
 // Tutup koneksi
