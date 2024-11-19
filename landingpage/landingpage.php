@@ -177,6 +177,46 @@
         </ul>
     </div>
       </section>
+
+        <!-- juara pengguna -->
+       <section id="juara">
+       <html>
+ <head>
+  <title>
+   Pengalaman Juara Pengguna
+  </title>
+ </head>
+ <body>
+  <div class="container">
+   <div class="title">
+    Pengalaman Juara Pengguna
+   </div>
+   <div class="user-experience">
+    <img alt="Portrait of a woman with long hair, wearing a white sweater, looking at the camera" height="150" src="https://storage.googleapis.com/a1aa/image/wpXfgnAt3R0RHigAqYjXnOZU4kfyZFm2U03x7Tjxyerc9LlnA.jpg" width="150"/>
+    <div class="user-details">
+     <h3>
+      Dasha Taran
+     </h3>
+     <p>
+      whdvgqdwidlwqjhgjytqefgujbhfewyifgukefbknwelfkuighwefiygiygewkfjb ndhwyejxjndbsvgedwujhbdeftguewiyudkjshgedcdqgwyhbfehejygdjnbhf eiudscvgiufwedcgwjvhbedsjcyetuydgikwguewdfweifgygeibfekj,cbjeygguk kefwuubefwbbuigefwjbuifewgdjbecdnhbiuywkhbfeckjbge
+     </p>
+    </div>
+   </div>
+   <div class="user-experience">
+    <div class="user-details">
+     <h3>
+      Kim Jong Un
+     </h3>
+     <p>
+      whdvgqdwidlwqjhgjytqefgujbhfewyifgukefbknwelfkuighwefiygiygewkfjb ndhwyejxjndbsvgedwujhbdeftguewiyudkjshgedcdqgwyhbfehejygdjnbhf eiudscvgiufwedcgwjvhbedsjcyetuydgikwguewdfweifgygeibfekj,cbjeygguk kefwuubefwbbuigefwjbuifewgdjbecdnhbiuywkhbfeckjbge
+     </p>
+    </div>
+    <img alt="Portrait of a man with short hair, wearing a suit and tie, smiling at the camera" height="150" src="https://storage.googleapis.com/a1aa/image/xBil87sHUexteUCjqGpz5IsJwgdnIYE3fJep2FWMSRJ26XKPB.jpg" width="150"/>
+   </div>
+  </div>
+ </body>
+</html>
+       </section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
