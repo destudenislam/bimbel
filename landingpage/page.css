@@ -228,8 +228,97 @@
             font-size: 16px;
             margin-bottom: 10px;
         }
-  
-          
+
+
+
+      /* juara */
+        
+        #juara {
+                 background-color: #0A0A8F;
+                 color: white;
+                 font-family: Arial, sans-serif;
+                 margin: 0;
+                 padding: 0;
+             }
+             #juara .container {
+                 text-align: center;
+                 padding: 50px;
+             }
+             #juara .title {
+                 font-size: 36px;
+                 font-weight: bold;
+                 margin-bottom: 50px;
+             }
+             #juara .user-experience {
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 margin-bottom: 50px;
+             }
+             #juara .user-experience img {
+                 border-radius: 10px;
+                 width: 150px;
+                 height: 150px;
+                 object-fit: cover;
+                 margin-right: 40px;
+                 margin-left: 40px;
+             }
+             #juara .user-details {
+                 text-align: left;
+                 max-width: 500px;
+             }
+             #juara .user-details h3 {
+                 font-size: 24px;
+                 font-weight: bold;
+                 margin: 0 0 10px 0;
+             }
+            #juara .user-details p {
+                 font-size: 16px;
+                 line-height: 1.5;
+                 margin: 0;
+             }
   
 
-  
+  /* rating */
+  #penilaian {
+    background-color: #0047BB;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#penilaian .container {
+    padding: 50px;
+}
+#penilaian  .profile {
+    display: inline-block;
+    margin: 20px;
+}
+#penilaian .profile img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+}
+#penilaian .profile h3 {
+    margin: 10px 0 5px 0;
+    font-size: 18px;
+}
+#penilaian .profile p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+#penilaian .stars {
+    color: white;
+}
+#penilaian  .line {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+
+}
