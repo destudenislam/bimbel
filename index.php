@@ -55,6 +55,7 @@
                 </li>
 
                 <li>
+<<<<<<< HEAD
                     <a href="http://localhost/bimbel/DataGuru/">
                         <span class="icon">
                             <ion-icon name="help-outline"></ion-icon>
@@ -73,11 +74,11 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="http://localhost/bimbel/paket/paket.php">
                         <span class="icon">
                             <ion-icon name="lock-closed-outline"></ion-icon>
                         </span>
-                        <span class="title">Mata Pelajaran</span>
+                        <span class="title">Paket</span>
                     </a>
                 </li>
 

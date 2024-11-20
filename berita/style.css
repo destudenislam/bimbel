@@ -1,0 +1,47 @@
+/* File: assets/css/style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.navigation {
+    width: 250px;
+    background: #2c3e50;
+    color: #fff;
+    position: fixed;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation ul li {
+    margin: 20px 0;
+}
+
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navigation ul li a .icon {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.navigation ul li a:hover {
+    background: #34495e;
+    border-radius: 5px;
+    padding: 10px;
+}
