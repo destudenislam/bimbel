@@ -214,77 +214,8 @@
     <img alt="Portrait of a man with short hair, wearing a suit and tie, smiling at the camera" height="150" src="https://storage.googleapis.com/a1aa/image/xBil87sHUexteUCjqGpz5IsJwgdnIYE3fJep2FWMSRJ26XKPB.jpg" width="150"/>
    </div>
   </div>
- 
+ </body>
+</html>
        </section>
-
-       <section id="penilaian">
-  <div class="container">
-   <div class="line">
-   </div>
-   <div class="profile">
-    <h3>
-     1. mr. Josep
-    </h3>
-    <img alt="Profile picture of mr. Josep" height="250" src="https://storage.googleapis.com/a1aa/image/kkTInrKXoiLSMBOUpn3UM1fPCBt0G1elO260dhe2kifJpBJPB.jpg" width="200"/>
-    <p>
-     Kasih Nilai
-    </p>
-    <div class="stars">
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-    </div>
-   </div>
-   <div class="profile">
-    <h3>
-     2. Nisa Kisniadewi
-    </h3>
-    <img alt="Profile picture of Nisa Kisniadewi" height="250" src="https://storage.googleapis.com/a1aa/image/WKcRwIpt7vb0LZVVRQzk4m2SpWlFQGTFRqwbHRPGBHeHNI5JA.jpg" width="200"/>
-    <p>
-     Kasih Nilai
-    </p>
-    <div class="stars">
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-    </div>
-   </div>
-   <div class="profile">
-    <h3>
-     3. Adinda Cristian
-    </h3>
-    <img alt="Profile picture of Adinda Cristian" height="250" src="https://storage.googleapis.com/a1aa/image/EM741ogTjNp3EFRfgPK9vwBBM5MHqiM3rvMbV17O5OLINI5JA.jpg" width="200"/>
-    <p>
-     Kasih Nilai
-    </p>
-    <div class="stars">
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-    </div>
-   </div>
-  </div>
-  </section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
