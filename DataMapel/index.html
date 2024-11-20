@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mata Pelajaran</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Mata Pelajaran</h2>
+    </header>
+
+    <!-- Form untuk Menambah/Edit Mata Pelajaran -->
+    <main>
+      <form id="mapelForm">
+        <input type="hidden" id="mapel_id" />
+        <div class="form-control">
+          <label for="mapel">Nama Mata Pelajaran:</label>
+          <input
+            type="text"
+            id="mapel"
+            placeholder="Masukkan Nama Mata Pelajaran"
+            required
+          />
+        </div>
+        <button type="submit" id="addButton">Tambah</button>
+        <button type="submit" id="updateButton" style="display: none">
+          Perbarui
+        </button>
+      </form>
+
+      <!-- Tabel Daftar Mata Pelajaran -->
+      <h3>Daftar Mata Pelajaran</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nama Mata Pelajaran</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="mapelList">
+          <!-- Data akan dimasukkan di sini menggunakan JavaScript -->
+        </tbody>
+      </table>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

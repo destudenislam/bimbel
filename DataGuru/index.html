@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Guru Bimbel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Data Guru Bimbingan Belajar</h1>
+    </header>
+
+    <main>
+      <h2>Form Guru</h2>
+      <form id="guruForm">
+        <input type="hidden" id="guruId" />
+        <input type="text" id="guruName" placeholder="Nama Guru" required />
+        <input type="text" id="guruAddress" placeholder="Alamat" required />
+        <select id="guruGender" required>
+          <option value="">Pilih Jenis Kelamin</option>
+          <option value="L">Laki-laki</option>
+          <option value="P">Perempuan</option>
+        </select>
+        <input
+          type="text"
+          id="guruSubject"
+          placeholder="Mata Pelajaran"
+          required
+        />
+        <input type="file" id="guruPhoto" accept="image/*" required />
+        <img
+          id="previewPhoto"
+          src=""
+          alt="Preview Foto"
+          style="display: none; width: 100px; height: 100px; margin-top: 10px"
+        />
+        <button type="submit">Tambahkan</button>
+      </form>
+
+      <h2>Daftar Guru</h2>
+      <table id="guruTable">
+        <thead>
+          <tr>
+            <th>Guru ID</th>
+            <th>Nama Guru</th>
+            <th>Alamat</th>
+            <th>Jenis Kelamin</th>
+            <th>Mata Pelajaran</th>
+            <th>Foto</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="guruList">
+          <!-- Data guru akan ditambahkan di sini -->
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Bimbel TRIO. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
