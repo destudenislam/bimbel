@@ -234,7 +234,7 @@
       /* juara */
         
         #juara {
-                 background-color: #0A0A8F;
+                 background-color: #002299;
                  color: white;
                  font-family: Arial, sans-serif;
                  margin: 0;
@@ -281,7 +281,7 @@
 
   /* rating */
   #penilaian {
-    background-color: #0047BB;
+    background-color: #002299 ;
     font-family: Arial, sans-serif;
     color: white;
     text-align: center;
@@ -321,4 +321,58 @@
     background: white;
     border-radius: 50%;
 
+}
+
+/* tentang kami */
+
+#tentang {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0A2A45;
+    color: #FFFFFF;
+    
+}
+#tentang .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+#tentang .content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+#tentang .left, .right {
+    width: 30%;
+}
+#tentang .left {
+    text-align: left;
+}
+#tentang .right {
+    text-align: left;
+}
+#tentang .center {
+    width: 100%;
+    
+}
+#tentang .center h1 {
+    font-size: 24px;
+    font-weight: normal;
+}
+#tentang .center h1 span {
+    font-weight: bold;
+}
+#tentang .social-icons {
+    list-style: none;
+    padding: 0;
+}
+#tentang .social-icons li {
+    margin: 10px 0;
+}
+#tentang .social-icons i {
+    margin-right: 10px;
 }

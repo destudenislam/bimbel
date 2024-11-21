@@ -217,5 +217,113 @@
  </body>
 </html>
        </section>
+
+       <!-- rating -->
+
+       <section id="penilaian">
+  <div class="container">
+   <div class="line">
+   </div>
+   <div class="profile">
+    <h3>
+     1. mr. Josep
+    </h3>
+    <img alt="Profile picture of mr. Josep" height="250" src="https://storage.googleapis.com/a1aa/image/kkTInrKXoiLSMBOUpn3UM1fPCBt0G1elO260dhe2kifJpBJPB.jpg" width="200"/>
+    <p>
+     Kasih Nilai
+    </p>
+    <div class="stars">
+     <i class="fas fa-star">
+     </i>
+     <i class="fas fa-star">
+     </i>
+     <i class="fas fa-star">
+     </i>
+     <i class="fas fa-star">
+     </i>
+     <i class="fas fa-star">
+     </i>
+    </div>
+   </div>
+   <div class="profile">
+    <h3>
+     2. Nisa Kisniadewi
+    </h3>
+    <img alt="Profile picture of Nisa Kisniadewi" height="250" src="https://storage.googleapis.com/a1aa/image/WKcRwIpt7vb0LZVVRQzk4m2SpWlFQGTFRqwbHRPGBHeHNI5JA.jpg" width="200"/>
+    <p>
+     Kasih Nilai
+    </p>
+    <div class="stars">
+     <i class="fas fa-star">
+     </i>
+     <i class="fas fa-star">
+     </i>
+     <i class="fas fa-star">
+     </i>
+     <i class="fas fa-star">
+     </i>
+     <i class="fas fa-star">
+     </i>
+    </div>
+   </div>
+   <div class="profile">
+    <h3>
+     3. Adinda Cristian
+    </h3>
+    <img alt="Profile picture of Adinda Cristian" height="250" src="https://storage.googleapis.com/a1aa/image/EM741ogTjNp3EFRfgPK9vwBBM5MHqiM3rvMbV17O5OLINI5JA.jpg" width="200"/>
+    <p>
+     Kasih Nilai
+    </p>
+    <div class="stars">
+     <i class="fas fa-star">
+     </i>
+     <i class="fas fa-star">
+     </i>
+     <i class="fas fa-star">
+     </i>
+     <i class="fas fa-star">
+     </i>
+     <i class="fas fa-star">
+     </i>
+    </div>
+   </div>
+  </div>
+  </section>
+
+
+<!-- tentang kami -->
+<section id="tentang">
+<html>
+<head>
+    <title>Tentang Kami Bimble Trio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="left">
+                <p><strong>BIMBLE TRIO HQ</strong><br>
+                Jl.uigqwdbgjigquefgfgkujleifefkinlfeljld<br>
+                hfieffh,bwdiououwdjbcbebikjb<br>
+                ouhq3rhoihqefhniinphefqw<br>
+                uogwfeouhewfbh</p>
+            </div>
+            <div class="center">
+                <h1>Tentang kami bimble <span>Trio</span></h1>
+            </div>
+            <div class="right">
+                <ul class="social-icons">
+                    <li><i class="fab fa-instagram"></i>@xcwouwu</li>
+                    <li><i class="fab fa-whatsapp"></i>0865365327573</li>
+                    <li><i class="fab fa-twitter"></i>iugdcuguj</li>
+                    <li><i class="fab fa-tiktok"></i>bimbletrio</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+</section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
