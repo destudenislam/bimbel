@@ -180,13 +180,8 @@
 
         <!-- juara pengguna -->
        <section id="juara">
-       <html>
- <head>
-  <title>
-   Pengalaman Juara Pengguna
-  </title>
- </head>
- <body>
+        <div class="new">
+ 
   <div class="container">
    <div class="title">
     Pengalaman Juara Pengguna
@@ -214,14 +209,16 @@
     <img alt="Portrait of a man with short hair, wearing a suit and tie, smiling at the camera" height="150" src="https://storage.googleapis.com/a1aa/image/xBil87sHUexteUCjqGpz5IsJwgdnIYE3fJep2FWMSRJ26XKPB.jpg" width="150"/>
    </div>
   </div>
- </body>
-</html>
-       </section>
+  </div>
+</section>
 
        <!-- rating -->
 
        <section id="penilaian">
   <div class="container">
+  <div class="title">
+    Rate kami
+   </div>
    <div class="line">
    </div>
    <div class="profile">
@@ -293,13 +290,6 @@
 
 <!-- tentang kami -->
 <section id="tentang">
-<html>
-<head>
-    <title>Tentang Kami Bimble Trio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-   
-</head>
-<body>
     <div class="container">
         <div class="content">
             <div class="left">
@@ -308,9 +298,6 @@
                 hfieffh,bwdiououwdjbcbebikjb<br>
                 ouhq3rhoihqefhniinphefqw<br>
                 uogwfeouhewfbh</p>
-            </div>
-            <div class="center">
-                <h1>Tentang kami bimble <span>Trio</span></h1>
             </div>
             <div class="right">
                 <ul class="social-icons">
@@ -322,8 +309,8 @@
             </div>
         </div>
     </div>
-</body>
-</html>
 </section>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

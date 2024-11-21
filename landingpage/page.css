@@ -205,6 +205,7 @@
             /* height: 100vh; */
             margin: 0;
             background-color: #002299;
+            padding-bottom: 30PX;
         }
         #keunggulan  .container {
             background-color: white;
@@ -214,6 +215,7 @@
             width: 100%;
             /* max-width: 800px; */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
         }
         #keunggulan  .container h1 {
             font-size: 24px;
@@ -237,12 +239,18 @@
                  background-color: #002299;
                  color: white;
                  font-family: Arial, sans-serif;
-                 margin: 0;
+                 margin: 0 ;
                  padding: 0;
-             }
+                width: 100%;
+                }
+                 
              #juara .container {
                  text-align: center;
+                 border-radius: 35px;
                  padding: 50px;
+                 background-color: #000080;
+                 margin: 0 100PX;
+
              }
              #juara .title {
                  font-size: 36px;
@@ -287,6 +295,17 @@
     text-align: center;
     margin: 0;
     padding: 0;
+}
+#penilaian .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+#penilaian .line {
+    width: 200px;
+    height: 50px;
 }
 #penilaian .container {
     padding: 50px;
@@ -338,7 +357,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 40vh;
     text-align: center;
 }
 #tentang .content {
@@ -348,23 +367,13 @@
 }
 #tentang .left, .right {
     width: 30%;
+    margin-bottom: 2PX;
 }
 #tentang .left {
     text-align: left;
 }
 #tentang .right {
     text-align: left;
-}
-#tentang .center {
-    width: 100%;
-    
-}
-#tentang .center h1 {
-    font-size: 24px;
-    font-weight: normal;
-}
-#tentang .center h1 span {
-    font-weight: bold;
 }
 #tentang .social-icons {
     list-style: none;
