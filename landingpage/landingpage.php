@@ -11,9 +11,9 @@
 </head>
 <body>
     
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class=" navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Trio</a>
+    <a class=" navbar-brand" href="#">Trio</a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -223,9 +223,9 @@
    </div>
    <div class="profile">
     <h3>
-     1. mr. Josep
+      mr. Josep
     </h3>
-    <img alt="Profile picture of mr. Josep" height="250" src="https://storage.googleapis.com/a1aa/image/kkTInrKXoiLSMBOUpn3UM1fPCBt0G1elO260dhe2kifJpBJPB.jpg" width="200"/>
+    <img alt="Profile picture of mr. Josep" height="200" src="https://storage.googleapis.com/a1aa/image/kkTInrKXoiLSMBOUpn3UM1fPCBt0G1elO260dhe2kifJpBJPB.jpg" width="200"/>
     <p>
      Kasih Nilai
     </p>
@@ -244,7 +244,7 @@
    </div>
    <div class="profile">
     <h3>
-     2. Nisa Kisniadewi
+      Nisa Kisniadewi
     </h3>
     <img alt="Profile picture of Nisa Kisniadewi" height="250" src="https://storage.googleapis.com/a1aa/image/WKcRwIpt7vb0LZVVRQzk4m2SpWlFQGTFRqwbHRPGBHeHNI5JA.jpg" width="200"/>
     <p>
@@ -265,7 +265,7 @@
    </div>
    <div class="profile">
     <h3>
-     3. Adinda Cristian
+      Adinda Cristian
     </h3>
     <img alt="Profile picture of Adinda Cristian" height="250" src="https://storage.googleapis.com/a1aa/image/EM741ogTjNp3EFRfgPK9vwBBM5MHqiM3rvMbV17O5OLINI5JA.jpg" width="200"/>
     <p>
@@ -283,6 +283,28 @@
      <i class="fas fa-star">
      </i>
     </div>
+    
+   </div>
+   <div class="profile">
+    <h3>
+      Adinda Cristian
+    </h3>
+    <img alt="Profile picture of Adinda Cristian" height="250" src="https://storage.googleapis.com/a1aa/image/WKcRwIpt7vb0LZVVRQzk4m2SpWlFQGTFRqwbHRPGBHeHNI5JA.jpg" width="200"/>
+    <p>
+     Kasih Nilai
+    </p>
+    <div class="stars">
+     <i class="fas fa-star">
+     </i>
+     <i class="fas fa-star">
+     </i>
+     <i class="fas fa-star">
+     </i>
+     <i class="fas fa-star">
+     </i>
+     <i class="fas fa-star">
+     </i>
+    </div> 
    </div>
   </div>
   </section>

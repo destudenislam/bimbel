@@ -2,7 +2,23 @@
     background-color: #fff;
     height: 100vh;
 }
-
+.navbar-brand{
+    font-family:Arial, sans-serif;
+    font-size:30px;
+    padding-right: 30px;
+    font-weight: bold;
+}
+ .btn-outline-success:hover{
+    background-color: #3498db; 
+    color: white;
+    border-color: #3498db; 
+    }
+    .btn-outline-success{
+        background-color: white; 
+        color: white; 
+        border-color: black; 
+        color: black;
+        }
 * {
          margin: 0;
          padding: 0;
@@ -105,7 +121,6 @@
    
           #paket {
             background-color: #002299;
-            /* height: 100vh; */
             padding-bottom: 100px;
           }
          #paket .container {
@@ -208,7 +223,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            /* height: 100vh; */
             margin: 0;
             background-color: #002299;
             padding-bottom: 30PX;
@@ -219,7 +233,6 @@
             border-radius: 10px;
             padding: 20px;
             width: 100%;
-            /* max-width: 800px; */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             
         }
@@ -322,6 +335,11 @@
     margin: 0;
     padding: 0;
 }
+#penilaian .profile {
+    border: 1px solid #000080;
+    border-radius: 20px;
+    background: white;
+}
 #penilaian .title {
     font-size: 36px;
     font-weight: bold;
@@ -339,22 +357,26 @@
 #penilaian  .profile {
     display: inline-block;
     margin: 20px;
+    color: black;
 }
 #penilaian .profile img {
     width: 200px;
-    height: 250px;
+    height: 200px;
     border-radius: 10px;
+    border: 2px solid black;
 }
 #penilaian .profile h3 {
     margin: 10px 0 5px 0;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 #penilaian .profile p {
     margin: 5px 0;
     font-size: 16px;
 }
 #penilaian .stars {
-    color: white;
+    color: black;
 }
 #penilaian  .line {
     position: absolute;
