@@ -55,8 +55,7 @@
                 </li>
 
                 <li>
-<<<<<<< HEAD
-                    <a href="http://localhost/bimbel/DataGuru/">
+                    <a href="http://localhost/bimbel/DataGuru/data_guru.php">
                         <span class="icon">
                             <ion-icon name="help-outline"></ion-icon>
                         </span>
@@ -65,7 +64,7 @@
                 </li>
 
                 <li>
-                    <a href="http://localhost/bimbel/DataSiswa/">
+                    <a href="http://localhost/bimbel/DataSiswa/data_siswa.php">
                         <span class="icon">
                             <ion-icon name="settings-outline"></ion-icon>
                         </span>

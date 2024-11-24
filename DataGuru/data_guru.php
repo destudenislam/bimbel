@@ -1,3 +1,13 @@
+<?php
+$conn = mysqli_connect("localhost", "root", "", "bimbel");
+if (!$conn) {
+    die("Koneksi gagal: " . mysqli_connect_error());
+}
+
+$sql = "SELECT * FROM guru"; 
+$result = mysqli_query($conn, $sql);
+?>
+
 <!DOCTYPE html>
 <html lang="id">
   <head>
@@ -14,27 +24,23 @@
     <main>
       <h2>Form Guru</h2>
       <form id="guruForm">
-        <input type="hidden" id="guruId" />
+        <input type="hidden" id="guruId" placeholder="ID Guru" required />
         <input type="text" id="guruName" placeholder="Nama Guru" required />
+        <input
+          type="text"
+          id="guruPhone"
+          placeholder="No Telepon"
+          required
+        />
         <input type="text" id="guruAddress" placeholder="Alamat" required />
-        <select id="guruGender" required>
-          <option value="">Pilih Jenis Kelamin</option>
-          <option value="L">Laki-laki</option>
-          <option value="P">Perempuan</option>
-        </select>
+        
         <input
           type="text"
           id="guruSubject"
-          placeholder="Mata Pelajaran"
+          placeholder="ID Mapel"
           required
         />
-        <input type="file" id="guruPhoto" accept="image/*" required />
-        <img
-          id="previewPhoto"
-          src=""
-          alt="Preview Foto"
-          style="display: none; width: 100px; height: 100px; margin-top: 10px"
-        />
+        <input type="text" id="adminId" placeholder="Admin ID" required />
         <button type="submit">Tambahkan</button>
       </form>
 
@@ -44,10 +50,10 @@
           <tr>
             <th>Guru ID</th>
             <th>Nama Guru</th>
+            <th>No Telepon</th>
             <th>Alamat</th>
-            <th>Jenis Kelamin</th>
-            <th>Mata Pelajaran</th>
-            <th>Foto</th>
+            <th>ID Mapel</th>
+            <th>Admin ID</th>
             <th>Aksi</th>
           </tr>
         </thead>
@@ -64,3 +70,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+
