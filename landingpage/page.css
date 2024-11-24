@@ -15,8 +15,8 @@
          align-items: center;
          padding: 50px;
          background-color: #ffffff;
-         height: 100vh;
-         left: 100px;
+         height: 85vh;
+         left: 10px;
          position: relative;
      }
      #home .left-section {
@@ -24,23 +24,29 @@
          
      }
      #home .left-section h1 {
-         font-size: 64px;
-         color: #1a73e8;
-         margin: 0;
+         font-size: 70px;
+         color: #002299;
+         margin: 15px 25px;
+         font-family: Arial, sans-serif;;
+         font-weight: bold;
      }
      #home .left-section p {
-         font-size: 18px;
-         color: #7f8c8d;
-         margin: 10px 0;
+         font-size: 35px;
+         color: black;
+         margin: 10px 15px;
+         padding-left: 10px;
+         font-weight:normal;
      }
      #home .left-section .welcome {
-         font-size: 16px;
+         font-size: 20px;
          color: #3498db;
-         margin: 20px 0;
+         margin: 25px 19px;
      }
      #home .buttons {
          display: flex;
-         gap: 20px;
+         gap: 25px;
+         margin: 28px;
+         margin-top: 15px;
      }
      #home .buttons .btn {
          padding: 10px 20px;
@@ -50,14 +56,14 @@
          text-decoration: none;
      }
      #home .buttons .btn-primary {
-         background-color: #2c3e50;
+         background-color: #3498db;
          color: #ffffff;
          border: none;
      }
      #home .buttons .btn-secondary {
          background-color: #ffffff;
-         color: #2c3e50;
-         border: 2px solid #2c3e50;
+         color: black;
+         border: 2px solid black;
      }
      #home .right-section img {
          max-width: 100%;
@@ -257,7 +263,7 @@
                  font-weight: bold;
                  margin-bottom: 50px;
              }
-             #juara .user-experience {
+             #juara .user-experience1 {
                  display: flex;
                  justify-content: center;
                  align-items: center;
@@ -271,10 +277,30 @@
                  margin-right: 40px;
                  margin-left: 40px;
              }
-             #juara .user-details {
+             #juara .user-details1 {
                  text-align: left;
                  max-width: 500px;
+                 padding-left: 10px;
              }
+             #juara .picture2{
+                margin-right: 15px;
+            }
+                 /* baru */
+             #juara .user-details2 {
+                    text-align: left;
+                    max-width: 500px;
+             }
+             #juara .user-experience2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 50px; 
+                padding-left: 10px;
+            }
+            #juara .picture1{
+                margin-left: 40px; 
+            }
+
              #juara .user-details h3 {
                  font-size: 24px;
                  font-weight: bold;

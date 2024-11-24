@@ -53,10 +53,10 @@
      Rumah Belajar Trio
     </h1>
     <p>
-     "Masa depan adalah milik mereka yang menyiapkan hari ini"
+     "Masa depan adalah milik mereka <br>  yang menyiapkan hari ini"
     </p>
     <p class="welcome">
-     Hallo, selamat datang
+     Hallo, Selamat Datang
     </p>
     <div class="buttons">
      <a class="btn btn-primary" href="#">
@@ -91,7 +91,7 @@
    <div class="card-container">
     <div class="card">
      <div class="card-title">
-      Paket SD
+      Paket SD ( Kalas 1 )
      </div>
      <img alt="Image of a teacher helping a student" height="200" src="https://storage.googleapis.com/a1aa/image/dtEGugprpkqvJBxqCfRYJNXZuTntnoXqn1U2QFOdmoX70d4JA.jpg" width="300"/>
      <div class="card-content">
@@ -109,7 +109,7 @@
     </div>
     <div class="card">
      <div class="card-title">
-      Paket SD
+      Paket SMP ( Kelas 1 )
      </div>
      <img alt="Image of a student studying with books" height="200" src="https://storage.googleapis.com/a1aa/image/6JNux1kivCquLBo2eVBvVlDfs1wQahwE90HBPNNvdKfnT3hnA.jpg" width="300"/>
      <div class="card-content">
@@ -125,7 +125,7 @@
     </div>
     <div class="card">
      <div class="card-title">
-      Paket SD
+      Paket SMA ( Kelas 1 )
      </div>
      <img alt="Image of a student raising hand in class" height="200" src="https://storage.googleapis.com/a1aa/image/ZyG37HuAnOISJ5j2SZqiBKd66E7B1kcwxM9QCeRgOkC60d4JA.jpg" width="300"/>
      <div class="card-content">
@@ -141,7 +141,7 @@
     </div>
     <div class="card">
      <div class="card-title">
-      Paket SD
+      Paket Umum
      </div>
      <img alt="Image of two students reading books" height="200" src="https://storage.googleapis.com/a1aa/image/MORCp972ygrHJlNYfeuU23GfT2B8ivb1Bv2O8i54QMPjT3hnA.jpg" width="300"/>
      <div class="card-content">
@@ -186,9 +186,9 @@
    <div class="title">
     Pengalaman Juara Pengguna
    </div>
-   <div class="user-experience">
-    <img alt="Portrait of a woman with long hair, wearing a white sweater, looking at the camera" height="150" src="https://storage.googleapis.com/a1aa/image/wpXfgnAt3R0RHigAqYjXnOZU4kfyZFm2U03x7Tjxyerc9LlnA.jpg" width="150"/>
-    <div class="user-details">
+   <div class="user-experience1">
+    <img class="picture2" alt="Portrait of a woman with long hair, wearing a white sweater, looking at the camera" height="150" src="https://storage.googleapis.com/a1aa/image/wpXfgnAt3R0RHigAqYjXnOZU4kfyZFm2U03x7Tjxyerc9LlnA.jpg" width="150"/>
+    <div class="user-details1">
      <h3>
       Dasha Taran
      </h3>
@@ -197,8 +197,8 @@
      </p>
     </div>
    </div>
-   <div class="user-experience">
-    <div class="user-details">
+   <div class="user-experience2">
+    <div class="user-details2">
      <h3>
       Kim Jong Un
      </h3>
@@ -206,7 +206,7 @@
       whdvgqdwidlwqjhgjytqefgujbhfewyifgukefbknwelfkuighwefiygiygewkfjb ndhwyejxjndbsvgedwujhbdeftguewiyudkjshgedcdqgwyhbfehejygdjnbhf eiudscvgiufwedcgwjvhbedsjcyetuydgikwguewdfweifgygeibfekj,cbjeygguk kefwuubefwbbuigefwjbuifewgdjbecdnhbiuywkhbfeckjbge
      </p>
     </div>
-    <img alt="Portrait of a man with short hair, wearing a suit and tie, smiling at the camera" height="150" src="https://storage.googleapis.com/a1aa/image/xBil87sHUexteUCjqGpz5IsJwgdnIYE3fJep2FWMSRJ26XKPB.jpg" width="150"/>
+    <img class="picture1" alt="Portrait of a man with short hair, wearing a suit and tie, smiling at the camera" height="150" src="https://storage.googleapis.com/a1aa/image/xBil87sHUexteUCjqGpz5IsJwgdnIYE3fJep2FWMSRJ26XKPB.jpg" width="150"/>
    </div>
   </div>
   </div>
