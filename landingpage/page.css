@@ -1,6 +1,10 @@
 #home{
-    background-color: #fff;
+    /* background-color: #fff; */
     height: 100vh;
+    background-image:url("Group 50.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .navbar-brand{
     font-family:Arial, sans-serif;
@@ -30,7 +34,7 @@
          justify-content: space-between;
          align-items: center;
          padding: 50px;
-         background-color: #ffffff;
+         /* background-color: #ffffff; */
          height: 85vh;
          left: 10px;
          position: relative;
@@ -45,6 +49,7 @@
          margin: 15px 25px;
          font-family: Arial, sans-serif;;
          font-weight: bold;
+         padding-left: auto;
      }
      #home .left-section p {
          font-size: 35px;
@@ -75,11 +80,12 @@
          background-color: #3498db;
          color: #ffffff;
          border: none;
+         
      }
      #home .buttons .btn-secondary {
          background-color: #ffffff;
-         color: black;
-         border: 2px solid black;
+         color: #3498db;
+         
      }
      #home .right-section img {
          max-width: 100%;
