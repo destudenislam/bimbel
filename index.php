@@ -55,7 +55,7 @@
                 </li>
 
                 <li>
-                    <a href="http://localhost/bimbel/data_guru/data_guru.php">
+                    <a href="http://localhost/bimbel/DataGuru/data_guru.php">
                         <span class="icon">
                             <ion-icon name="help-outline"></ion-icon>
                         </span>
@@ -64,7 +64,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="http://localhost/bimbel/DataSiswa/data_siswa.php">
                         <span class="icon">
                             <ion-icon name="settings-outline"></ion-icon>
                         </span>
@@ -82,7 +82,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="http://localhost/bimbel/TingkatPendidikan/tingkat_pendidikan.php">
                         <span class="icon">
                             <ion-icon name="log-out-outline"></ion-icon>
                         </span>

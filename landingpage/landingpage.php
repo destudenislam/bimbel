@@ -48,6 +48,7 @@
 <!-- Home -->
 <section id="home">
     <div class="container">
+     
    <div class="left-section">
     <h1>
      Rumah Belajar Trio
