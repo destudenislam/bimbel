@@ -64,7 +64,7 @@
                 </li>
 
                 <li>
-                    <a href="http://localhost/bimbel/DataSiswa/data_siswa.php">
+                    <a href="http://localhost/bimbel/siswa/data_siswa.php">
                         <span class="icon">
                             <ion-icon name="settings-outline"></ion-icon>
                         </span>
