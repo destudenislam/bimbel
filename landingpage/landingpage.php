@@ -104,9 +104,9 @@
       <br/>
       uewfgilhq3ri3qroiklhl
      </div>
-     <button class="card-button">
+     <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
       Beli Paket
-     </button>
+     </a>  
     </div>
     <div class="card">
      <div class="card-title">
@@ -120,9 +120,9 @@
       <br/>
       wwaoiuhugywgvgjvfg
      </div>
-     <button class="card-button">
+     <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
       Beli Paket
-     </button>
+     </a>  
     </div>
     <div class="card">
      <div class="card-title">
@@ -136,9 +136,9 @@
       <br/>
       wwaoiuhugywgvgjvfg
      </div>
-     <button class="card-button">
+     <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
       Beli Paket
-     </button>
+     </a>  
     </div>
     <div class="card">
      <div class="card-title">
@@ -152,9 +152,9 @@
       <br/>
       wwaoiuhugywgvgjvfg
      </div>
-     <button class="card-button">
+     <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
       Beli Paket
-     </button>
+     </a>     
     </div>
     <div class="large-card">
      <!-- <img alt="Image of students raising hands in class"  src="https://storage.googleapis.com/a1aa/image/yEwbsHeJsZVKfkLYlIvEfoBOQaRkTD2ss1rc7Uzodo9xT3hnA.jpg" /> -->
@@ -162,8 +162,12 @@
       Lihat Semua
       <br/>
       Paket Belajar
-      <i class="fas fa-chevron-right">
-      </i>
+     </div>
+     <div>
+     <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button> <class= "panah">
+     >
+     </a> 
+     </i>
      </div>
      </section>
 

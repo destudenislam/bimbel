@@ -187,6 +187,10 @@
               margin-bottom: 20px;
               margin: 10px 20px;
           }
+          #paket .card  a{
+            text-decoration: none;
+            color: white;
+          }
           #paket  .card-button:hover {
               background-color: #002299;
           }
@@ -219,7 +223,10 @@
           #paket  .large-card-title i {
               margin-left: 10px;
           }
-
+         #paket  .fas a{
+            text-decoration: none;
+            color: white;
+         }
 
      /* keunggulan */
 
