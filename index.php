@@ -167,8 +167,26 @@
             <div class="details">
                 <div class="recentOrders">
                     <div class="cardHeader">
-                        <h2>Grafik Total Siswa</h2>
+                        <h2>Grafik Siswa Berdasarkan Asal Sekolah</h2>
                     </div>
+                    <br>
+                    
+<?php
+// Jalankan skrip Python
+$output = shell_exec('python script.py');
+
+// Cek output
+echo "<pre>$output</pre>";
+
+// Tampilkan gambar hasil
+$file = 'dasbord/jumlah_siswa.png'; // Jalur relatif ke subdirektori
+if (file_exists($file)) {
+    echo '<img src="'.$file.'" alt="Jumlah Siswa">';
+} else {
+    echo "Gambar tidak ditemukan. Pastikan skrip Python menghasilkan gambar dengan benar dan nama file sudah sesuai.";
+}
+?>
+
 
                 </div>
 

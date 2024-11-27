@@ -73,6 +73,18 @@
     </style>
 </head>
 <body>
+<?php
+// Jalankan skrip Python
+$output = shell_exec('python script.py');
+
+// Cek output
+echo "<pre>$output</pre>";
+
+// Tampilkan gambar hasil
+echo '<img src="jumlah_siswa.png" alt="Jumlah Siswa">';
+?>
+
+
     <div class="container">
         <span class="close">&times;</span>
         <div class="header">
