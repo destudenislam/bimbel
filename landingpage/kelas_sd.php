@@ -76,12 +76,14 @@
     <div class="container">
         <span class="close">&times;</span>
         <div class="header">
-            <h2>Pilih Jenjang</h2>
+            <h2>Pilih Mata Pelajaran</h2>
         </div>
         <div class="buttons-group">
-            <div class="button selected">SD</div>
-            <div class="button">SMP</div>
-            <div class="button">SMA/SMK</div>
+            <div class="button selected">IPS</div>
+            <div class="button">B.Indonesia</div>
+            <div class="button">Matematika</div>
+            <div class="button">B.Inggris</div>
+            <div class="button">IPA</div>
         </div>
         <hr>
         <div class="section-title">Pilih Kelas</div>

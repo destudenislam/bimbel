@@ -85,14 +85,5 @@
             <div class="button">B.Inggris</div>
             <div class="button">IPA</div>
         </div>
-        <hr>
-        <div class="section-title">Pilih Kelas</div>
-        <div class="buttons-group">
-            <div class="button">Kelas 10</div>
-            <div class="button">Kelas 11</div>
-            <div class="button">Kelas 12</div>
-        </div>
-        <button class="save-button">Simpan</button>
-    </div>
-</body>
-</html>
+        
+        

@@ -130,7 +130,8 @@
             padding-bottom: 100px;
           }
          #paket .container {
-              padding: 20px;
+              padding: 10px 1px;
+              
           }
           #paket .header {
               background-color: #ffffff;
@@ -144,8 +145,9 @@
           }
           #paket .card-container {
               display: flex;
-              justify-content: space-between;
+              justify-content:space-evenly ;
               margin-top: 20px;
+              /* justify-content:center */
           }
           #paket .card {
               background-color: #ffffff;
