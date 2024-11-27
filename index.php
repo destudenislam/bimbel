@@ -1,4 +1,5 @@
 <?php
+
 ?>
 
 <!DOCTYPE html>
@@ -120,7 +121,7 @@
             <div class="cardBox">
                 <div class="card">
                     <div>
-                        <div class="numbers">1,504</div>
+                        <div class="numbers">122</div>
                         <div class="cardName">Total Siswa</div>
                     </div>
 
@@ -131,7 +132,7 @@
 
                 <div class="card">
                     <div>
-                        <div class="numbers">80</div>
+                        <div class="numbers">6</div>
                         <div class="cardName">Total Guru</div>
                     </div>
 
@@ -142,7 +143,7 @@
 
                 <div class="card">
                     <div>
-                        <div class="numbers">284</div>
+                        <div class="numbers">122</div>
                         <div class="cardName">Pendaftar/bulan</div>
                     </div>
 
@@ -167,7 +168,7 @@
             <div class="details">
                 <div class="recentOrders">
                     <div class="cardHeader">
-                        <h2>Grafik Total Siswa</h2>
+                        <h2>Grafik Jumlah Siswa</h2>
                     </div>
 
                 </div>
