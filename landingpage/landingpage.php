@@ -92,17 +92,17 @@
    <div class="card-container">
     <div class="card">
      <div class="card-title">
-      Paket SD ( Kalas 1 )
+      Paket SD 
      </div>
      <img alt="Image of a teacher helping a student" height="200" src="https://storage.googleapis.com/a1aa/image/dtEGugprpkqvJBxqCfRYJNXZuTntnoXqn1U2QFOdmoX70d4JA.jpg" width="300"/>
      <div class="card-content">
-      blablablablablablaeeboublvii
+     1. Bahasa Indonesia
       <br/>
-      ohtweouhguhtwgoe
+      2. Matematika
       <br/>
-      wwaoiuhugywgvgjvfgouhefwhb prii o4oyo
+      3. Ilmu Pengetahuan Alam (IPA)
       <br/>
-      uewfgilhq3ri3qroiklhl
+      4. Pendidikan Agama dan Budi Pekerti
      </div>
      <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
       Beli Paket
@@ -110,15 +110,15 @@
     </div>
     <div class="card">
      <div class="card-title">
-      Paket SMP ( Kelas 1 )
+      Paket SMP
      </div>
      <img alt="Image of a student studying with books" height="200" src="https://storage.googleapis.com/a1aa/image/6JNux1kivCquLBo2eVBvVlDfs1wQahwE90HBPNNvdKfnT3hnA.jpg" width="300"/>
      <div class="card-content">
-      blablablablablablaeeboublvii
+      Bahasa Indonesia
       <br/>
-      ohtweouhguhtwgoe
+      MAtematika
       <br/>
-      wwaoiuhugywgvgjvfg
+      IPA
      </div>
      <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
       Beli Paket
@@ -126,15 +126,15 @@
     </div>
     <div class="card">
      <div class="card-title">
-      Paket SMA ( Kelas 1 )
+      Paket SMA 
      </div>
      <img alt="Image of a student raising hand in class" height="200" src="https://storage.googleapis.com/a1aa/image/ZyG37HuAnOISJ5j2SZqiBKd66E7B1kcwxM9QCeRgOkC60d4JA.jpg" width="300"/>
      <div class="card-content">
-      blablablablablablaeeboublvii
+     Bahasa Indonesia
       <br/>
-      ohtweouhguhtwgoe
+      MAtematika
       <br/>
-      wwaoiuhugywgvgjvfg
+      IPA
      </div>
      <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
       Beli Paket
@@ -146,11 +146,11 @@
      </div>
      <img alt="Image of two students reading books" height="200" src="https://storage.googleapis.com/a1aa/image/MORCp972ygrHJlNYfeuU23GfT2B8ivb1Bv2O8i54QMPjT3hnA.jpg" width="300"/>
      <div class="card-content">
-      blablablablablablaeeboublvii
+     Bahasa Indonesia
       <br/>
-      ohtweouhguhtwgoe
+      MAtematika
       <br/>
-      wwaoiuhugywgvgjvfg
+      IPA
      </div>
      <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
       Beli Paket
