@@ -121,7 +121,7 @@
             <div class="cardBox">
                 <div class="card">
                     <div>
-                        <div class="numbers">122</div>
+                        <div class="numbers">131</div>
                         <div class="cardName">Total Siswa</div>
                     </div>
 
@@ -143,7 +143,7 @@
 
                 <div class="card">
                     <div>
-                        <div class="numbers">122</div>
+                        <div class="numbers">131</div>
                         <div class="cardName">Pendaftar/bulan</div>
                     </div>
 
@@ -168,9 +168,10 @@
             <div class="details">
                 <div class="recentOrders">
                     <div class="cardHeader">
-                        <h2>Grafik Jumlah Siswa</h2>
-                    </div>
 
+                    </div>
+                    <br>
+                    <iframe title="project_bimbel" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=0a3724b7-6b69-4fa9-a6f3-bb004e166c74&autoAuth=true&ctid=5263cc81-5912-42c4-abc1-d0f1b668b530" frameborder="0" allowFullScreen="true"></iframe>
                 </div>
 
                 <!-- ================= New Customers ================ -->
