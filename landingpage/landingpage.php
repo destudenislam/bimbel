@@ -60,10 +60,10 @@
      Hallo, Selamat Datang
     </p>
     <div class="buttons">
-     <a class="btn btn-primary" href="#">
+     <a class="btn btn-primary" href="http://localhost/bimbel/landingpage/login1/">
       Daftar
      </a>
-     <a class="btn btn-secondary" href="#"> 
+     <a class="btn btn-secondary" href="http://localhost/bimbel/landingpage/login1/"> 
       Login
      </a>
     </div>
