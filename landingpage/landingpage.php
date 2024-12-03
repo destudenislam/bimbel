@@ -60,10 +60,10 @@
      Hallo, Selamat Datang
     </p>
     <div class="buttons">
-     <a class="btn btn-primary" href="http://localhost/bimbel/landingpage/login1/">
+     <a class="btn btn-primary" href="http://localhost/bimbel/landingpage/login/login.html">
       Daftar
      </a>
-     <a class="btn btn-secondary" href="http://localhost/bimbel/landingpage/login1/"> 
+     <a class="btn btn-secondary" href="http://localhost/bimbel/landingpage/login/login.html"> 
       Login
      </a>
     </div>
@@ -103,6 +103,10 @@
       3. Ilmu Pengetahuan Alam (IPA)
       <br/>
       4. Pendidikan Agama dan Budi Pekerti
+      <div class="harga"
+        <h1>Rp.1.0000<h1> 
+      
+</div>
      </div>
      <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
       Beli Paket
@@ -119,6 +123,11 @@
       MAtematika
       <br/>
       IPA
+      <br>
+      <div class="harga"
+        <h1>Rp.1.0000<h1> 
+      
+</div>
      </div>
      <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
       Beli Paket
@@ -135,8 +144,12 @@
       MAtematika
       <br/>
       IPA
+      <div class="harga"
+        <h1>Rp.1.0000<h1> 
+      
+</div>
      </div>
-     <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
+     <a href="http://localhost/bimbel/landingpage/pembayaran1.php"><button class="card-button">
       Beli Paket
      </a>  
     </div>
@@ -151,6 +164,10 @@
       MAtematika
       <br/>
       IPA
+      <div class="harga"
+        <h1>Rp.1.0000<h1> 
+      
+</div>
      </div>
      <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
       Beli Paket

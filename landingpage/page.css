@@ -143,6 +143,11 @@
               color: #0033cc;
               margin: 24px;
           }
+          #paket .harga{
+            font-size: 18px;
+            padding: 20px;
+            font-weight: bold;
+          }
           #paket .card-container {
               display: flex;
               justify-content:space-evenly ;
@@ -152,7 +157,7 @@
           #paket .card {
               background-color: #ffffff;
               border-radius: 20px;
-              width: 18%;
+              width: 22%;
               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
               overflow: hidden;
               text-align: center;
@@ -239,7 +244,7 @@
         }
         #keunggulan  .container {
             background-color: white;
-            border: 2px solid #0000ff;
+            border: 2px solid black;
             border-radius: 10px;
             padding: 20px;
             width: 100%;
@@ -279,6 +284,7 @@
                  padding: 50px;
                  background-color: #000080;
                  margin: 0 100PX;
+                 border: 2px solid white;
 
              }
              #juara .title {
@@ -299,6 +305,8 @@
                  object-fit: cover;
                  margin-right: 40px;
                  margin-left: 40px;
+                 border: #333333;
+
              }
              #juara .user-details1 {
                  text-align: left;

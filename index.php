@@ -1,4 +1,5 @@
 <?php
+
 ?>
 
 <!DOCTYPE html>
@@ -64,7 +65,7 @@
                 </li>
 
                 <li>
-                    <a href="http://localhost/bimbel/DataSiswa/data_siswa.php">
+                    <a href="http://localhost/bimbel/siswa/data_siswa.php">
                         <span class="icon">
                             <ion-icon name="settings-outline"></ion-icon>
                         </span>
@@ -120,7 +121,7 @@
             <div class="cardBox">
                 <div class="card">
                     <div>
-                        <div class="numbers">1,504</div>
+                        <div class="numbers">131</div>
                         <div class="cardName">Total Siswa</div>
                     </div>
 
@@ -131,7 +132,7 @@
 
                 <div class="card">
                     <div>
-                        <div class="numbers">80</div>
+                        <div class="numbers">6</div>
                         <div class="cardName">Total Guru</div>
                     </div>
 
@@ -142,7 +143,7 @@
 
                 <div class="card">
                     <div>
-                        <div class="numbers">284</div>
+                        <div class="numbers">131</div>
                         <div class="cardName">Pendaftar/bulan</div>
                     </div>
 
@@ -167,27 +168,10 @@
             <div class="details">
                 <div class="recentOrders">
                     <div class="cardHeader">
-                        <h2>Grafik Siswa Berdasarkan Asal Sekolah</h2>
+
                     </div>
                     <br>
-                    
-<?php
-// Jalankan skrip Python
-$output = shell_exec('python script.py');
-
-// Cek output
-echo "<pre>$output</pre>";
-
-// Tampilkan gambar hasil
-$file = 'dasbord/jumlah_siswa.png'; // Jalur relatif ke subdirektori
-if (file_exists($file)) {
-    echo '<img src="'.$file.'" alt="Jumlah Siswa">';
-} else {
-    echo "Gambar tidak ditemukan. Pastikan skrip Python menghasilkan gambar dengan benar dan nama file sudah sesuai.";
-}
-?>
-
-
+                    <iframe title="project_bimbel" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=0a3724b7-6b69-4fa9-a6f3-bb004e166c74&autoAuth=true&ctid=5263cc81-5912-42c4-abc1-d0f1b668b530" frameborder="0" allowFullScreen="true"></iframe>
                 </div>
 
                 <!-- ================= New Customers ================ -->

@@ -4,8 +4,42 @@ if (!$conn) {
     die("Koneksi gagal: " . mysqli_connect_error());
 }
 
-// Fetch data from the database
-$sql = "SELECT * FROM tingkat_pendidikan"; // Replace 'tingkat_pendidikan' with your actual table name
+// Handle Create/Update
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $tingkat_id = isset($_POST['tingkat_id']) ? $_POST['tingkat_id'] : null;
+    $nama_tingkat = $_POST['nama_tingkat'];
+
+    if ($tingkat_id) {
+        // Update data
+        $sql = "UPDATE tingkat_pendidikan SET nama_tingkat='$nama_tingkat' WHERE tingkat_id=$tingkat_id";
+    } else {
+        // Insert data
+        $sql = "INSERT INTO tingkat_pendidikan (nama_tingkat) VALUES ('$nama_tingkat')";
+    }
+
+    if (!mysqli_query($conn, $sql)) {
+        echo "Error: " . mysqli_error($conn);
+    }
+
+    header("Location: " . $_SERVER['PHP_SELF']);
+    exit();
+}
+
+// Handle Delete
+if (isset($_GET['delete_id'])) {
+    $delete_id = $_GET['delete_id'];
+    $sql = "DELETE FROM tingkat_pendidikan WHERE tingkat_id=$delete_id";
+
+    if (!mysqli_query($conn, $sql)) {
+        echo "Error: " . mysqli_error($conn);
+    }
+
+    header("Location: " . $_SERVER['PHP_SELF']);
+    exit();
+}
+
+// Fetch Data
+$sql = "SELECT * FROM tingkat_pendidikan";
 $result = mysqli_query($conn, $sql);
 ?>
 
@@ -23,29 +57,26 @@ $result = mysqli_query($conn, $sql);
     </header>
 
     <main>
-        <h2>Tingkat Pendidikan</h2>
-
         <!-- Form Tambah/Edit Tingkat -->
-        <form id="tingkatForm">
-            <input type="hidden" id="tingkat_id" />
+        <h2>Form Tingkat Pendidikan</h2>
+        <form method="POST" action="">
+            <input type="hidden" name="tingkat_id" id="tingkat_id" />
             <div class="form-control">
                 <label for="nama_tingkat">Nama Tingkat:</label>
                 <input
                     type="text"
+                    name="nama_tingkat"
                     id="nama_tingkat"
                     placeholder="Masukkan Nama Tingkat"
                     required
                 />
             </div>
-            <button type="submit" id="addButton">Tambah</button>
-            <button type="submit" id="updateButton" style="display: none">
-                Perbarui
-            </button>
+            <button type="submit" id="addButton">Simpan</button>
         </form>
 
         <!-- Tabel Daftar Tingkat Pendidikan -->
         <h3>Daftar Tingkat Pendidikan</h3>
-        <table>
+        <table border="1" cellpadding="10" cellspacing="0">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -55,15 +86,14 @@ $result = mysqli_query($conn, $sql);
             </thead>
             <tbody id="tingkatList">
                 <?php
-                // Check if there are results and output them
                 if (mysqli_num_rows($result) > 0) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo "<tr>";
-                        echo "<td>" . $row['tingkat_id'] . "</td>"; // Use the correct column name
-                        echo "<td>" . $row['nama_tingkat'] . "</td>"; // Ensure this column name is correct as well
+                        echo "<td>" . $row['tingkat_id'] . "</td>";
+                        echo "<td>" . $row['nama_tingkat'] . "</td>";
                         echo "<td>
-                                <button onclick='editTingkat(" . $row['tingkat_id'] . ")'>Edit</button>
-                                <button onclick='deleteTingkat(" . $row['tingkat_id'] . ")'>Hapus</button>
+                                <button onclick='editTingkat(" . $row['tingkat_id'] . ", \"" . $row['nama_tingkat'] . "\")'>Edit</button>
+                                <a href='?delete_id=" . $row['tingkat_id'] . "' onclick='return confirm(\"Hapus data ini?\")'>Hapus</a>
                               </td>";
                         echo "</tr>";
                     }
@@ -76,10 +106,18 @@ $result = mysqli_query($conn, $sql);
     </main>
 
     <footer>
-        <p>&copy; 2024 Tingkat Pendidikan. All rights reserved.</p>
+        <p>&copy; 2024 CRUD Tingkat Pendidikan. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Fungsi untuk Edit Data
+        function editTingkat(id, namaTingkat) {
+            document.getElementById("tingkat_id").value = id;
+            document.getElementById("nama_tingkat").value = namaTingkat;
+
+            document.getElementById("addButton").textContent = "Perbarui";
+        }
+    </script>
 </body>
 </html>
 
