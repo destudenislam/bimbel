@@ -108,7 +108,7 @@
       
 </div>
      </div>
-     <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
+     <a href="http://localhost/bimbel/landingpage/pembayaran1.php"><button class="card-button">
       Beli Paket
      </a>  
     </div>
@@ -129,7 +129,7 @@
       
 </div>
      </div>
-     <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
+     <a href="http://localhost/bimbel/landingpage/pembayaran1.php"><button class="card-button">
       Beli Paket
      </a>  
     </div>
@@ -169,7 +169,7 @@
       
 </div>
      </div>
-     <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
+     <a href="http://localhost/bimbel/landingpage/pembayaran1.php"><button class="card-button">
       Beli Paket
      </a>     
     </div>
