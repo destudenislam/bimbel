@@ -17,17 +17,13 @@
 <body>
     <!-- =============== Navigation ================ -->
     <div class="container">
-        <div class="navigation">
+    <div class="navigation">
             <ul>
                 <li>
                     <a href="#">
-                        <span class="icon">
-                            <ion-icon name="logo-apple"></ion-icon>
-                        </span>
-                        <span class="title">Bimbel Trio</span>
+                        <span class="title">Rumah Bimbel Trio</span>
                     </a>
                 </li>
-
                 <li>
                     <a href="#">
                         <span class="icon">
@@ -36,65 +32,58 @@
                         <span class="title">Dashboard</span>
                     </a>
                 </li>
-
                 <li>
-    <a href="http://localhost/bimbel/berita/berita.php">
-        <span class="icon">
-            <ion-icon name="newspaper-outline"></ion-icon>
-        </span>
-        <span class="title">Berita</span>
-    </a>
-</li>
-
-                <li>
-                <a href="http://localhost/bimbel/galeri/galeri.php">
+                    <a href="http://localhost/bimbel/berita/berita.php">
                         <span class="icon">
-                            <ion-icon name="chatbubble-outline"></ion-icon>
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                        </span>
+                        <span class="title">Berita</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost/bimbel/galeri/galeri.php">
+                        <span class="icon">
+                            <ion-icon name="image-outline"></ion-icon>
                         </span>
                         <span class="title">Galeri</span>
                     </a>
                 </li>
-
                 <li>
                     <a href="http://localhost/bimbel/DataGuru/data_guru.php">
                         <span class="icon">
-                            <ion-icon name="help-outline"></ion-icon>
+                            <ion-icon name="people-outline"></ion-icon>
                         </span>
                         <span class="title">Data Guru</span>
                     </a>
                 </li>
-
                 <li>
                     <a href="http://localhost/bimbel/siswa/data_siswa.php">
                         <span class="icon">
-                            <ion-icon name="settings-outline"></ion-icon>
+                            <ion-icon name="person-outline"></ion-icon>
                         </span>
                         <span class="title">Data Siswa</span>
                     </a>
                 </li>
-
                 <li>
                     <a href="http://localhost/bimbel/paket/paket.php">
                         <span class="icon">
-                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <ion-icon name="pricetag-outline"></ion-icon>
                         </span>
                         <span class="title">Paket</span>
                     </a>
                 </li>
-
                 <li>
                     <a href="http://localhost/bimbel/TingkatPendidikan/tingkat_pendidikan.php">
                         <span class="icon">
-                            <ion-icon name="log-out-outline"></ion-icon>
+                            <ion-icon name="school-outline"></ion-icon>
                         </span>
                         <span class="title">Tingkat Pendidikan</span>
                     </a>
                 </li>
-
                 <li>
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <ion-icon name="wallet-outline"></ion-icon>
                         </span>
                         <span class="title">Transaksi</span>
                     </a>
@@ -117,53 +106,6 @@
                 </div>
             </div>
 
-            <!-- ======================= Cards ================== -->
-            <div class="cardBox">
-                <div class="card">
-                    <div>
-                        <div class="numbers">131</div>
-                        <div class="cardName">Total Siswa</div>
-                    </div>
-
-                    <div class="iconBx">
-                        <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div>
-                        <div class="numbers">6</div>
-                        <div class="cardName">Total Guru</div>
-                    </div>
-
-                    <div class="iconBx">
-                        <ion-icon name="cart-outline"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div>
-                        <div class="numbers">131</div>
-                        <div class="cardName">Pendaftar/bulan</div>
-                    </div>
-
-                    <div class="iconBx">
-                        <ion-icon name="chatbubbles-outline"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div>
-                        <div class="numbers">$7,842</div>
-                        <div class="cardName">Total Pemasukan</div>
-                    </div>
-
-                    <div class="iconBx">
-                        <ion-icon name="cash-outline"></ion-icon>
-                    </div>
-                </div>
-            </div>
-
             <!-- ================ Order Details List ================= -->
             <div class="details">
                 <div class="recentOrders">
@@ -171,7 +113,7 @@
 
                     </div>
                     <br>
-                    <iframe title="project_bimbel" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=0a3724b7-6b69-4fa9-a6f3-bb004e166c74&autoAuth=true&ctid=5263cc81-5912-42c4-abc1-d0f1b668b530" frameborder="0" allowFullScreen="true"></iframe>
+                    <iframe title="project_smt3" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=3eedd2ee-132e-4b61-844a-81d6421c0590&autoAuth=true&ctid=5263cc81-5912-42c4-abc1-d0f1b668b530" frameborder="0" allowFullScreen="true"></iframe>
                 </div>
 
                 <!-- ================= New Customers ================ -->
