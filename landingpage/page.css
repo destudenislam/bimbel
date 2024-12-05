@@ -23,7 +23,8 @@
         border-color: black; 
         color: black;
         }
-* {
+* 
+{
          margin: 0;
          padding: 0;
          font-family: 'Roboto', sans-serif;
@@ -342,6 +343,85 @@
                  line-height: 1.5;
                  margin: 0;
              }
+  /* guru */
+  
+  #guru {
+            font-family: Arial, sans-serif;
+            /* margin: 20px 250px;  */
+            padding: 5px auto;
+            background-color: #002299;
+            text-align: center;
+            color: white;
+            width: auto;
+
+        }
+        #guru.container {
+            padding: 20px;
+            
+        }
+        #guru.title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #guru .card-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 20px;
+            padding-bottom: 20px;
+            margin: 20px 50px;
+        }
+        #guru .card {
+            background: linear-gradient(180deg, #4A90E2 0%, #9013FE 100%);
+            border-radius: 10px;
+            color: white;
+            padding: 20px;
+            width: 300px;
+            height: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            scroll-snap-align: start;
+            flex: 0 0 auto;
+        }
+        #guru .card img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+        #guru .card h3 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        #guru .card p {
+            margin: 10px 0;
+        }
+        #guru .card ul {
+            list-style: none;
+            padding: 0;
+        }
+        #guru .card ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        #guru.card ul li i {
+            margin-right: 10px;
+            color: #00d1b2;
+        }
+        #guru.pagination {
+            margin-top: 20px;
+        }
+        #guru.pagination i {
+            font-size: 24px;
+            color: #ff6f61;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+         @media (max-width: 768px) {
+            .card-container {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
   
 
   /* rating */
@@ -406,6 +486,17 @@
     background: white;
     border-radius: 50%;
 
+}
+
+#penilaian .star {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ccc; /* Bintang default (abu-abu) */
+}
+
+#penilaian .star:hover,
+#penilaian .star.active {
+    color: gold; /* Bintang yang aktif atau di-hover */
 }
 
 /* tentang kami */

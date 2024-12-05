@@ -222,7 +222,144 @@
   </div>
 </section>
 
+<!-- GURU -->
+<SEction id="guru">
+<html>
+ <head>
+  <title>
+   Master Teachers
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  
+ </head>
+ <body>
+  <div class="container">
+   <div class="title">
+    Kenalan dengan para Master Teacher berpengalaman
+   </div>
+   <div class="card-container" id="card-container">
+    <div class="card">
+     <img alt="Portrait of Vania, Master Teacher Bahasa Inggris" height="250" src="https://storage.googleapis.com/a1aa/image/x3OlofDfhTolZkvpYJHvCXfIsLi5B1xSEZmn7PuddYw1qyvnA.jpg" width="300"/>
+     <h3>
+      Vania
+     </h3>
+     <p>
+      Master Teacher Bahasa Inggris
+     </p>
+     <hr/>
+     <p>
+      Pengalaman dan prestasi
+     </p>
+     <ul>
+      <li>
+       <i class="fas fa-check-circle">
+       </i>
+       Diterima di 6 universitas luar negeri, termasuk Inggris, Australia, Belanda, dan Itali
+      </li>
+      <li>
+       <i class="fas fa-check-circle">
+       </i>
+       Master Teacher of The Month (April) - Brain Academy Online 2022
+      </li>
+      <li>
+      
+    </div>
+    <div class="card">
+     <img alt="Portrait of Fendi, Master Teacher Kimia" height="250" src="https://storage.googleapis.com/a1aa/image/t3eKUa19eGsbvUebcbptUpCjg7eWfeJjqEGACKlP80gAWVe7JA.jpg" width="300"/>
+     <h3>
+      Fendi
+     </h3>
+     <p>
+      Master Teacher Kimia
+     </p>
+     <hr/>
+     <p>
+      Pengalaman dan prestasi
+     </p>
+     <ul>
+      <li>
+       <i class="fas fa-check-circle">
+       </i>
+       Juara 1 Lomba Karya Tulis Ilmiah (LKTI) Budaya Jawa Tengah
+      </li>
+      <li>
+       <i class="fas fa-check-circle">
+       </i>
+       Juara 1 Lomba Karya Tulis Ilmiah (LKTI) Sains di Universitas Sebelas Maret (UNS)
+      </li>
+      
+     </ul>
+    </div>
+    <div class="card">
+     <img alt="Portrait of Rika, Master Teacher Fisika" height="250" src="https://storage.googleapis.com/a1aa/image/gMj1uevte1kc4UewtBqxvEbIBhNqFpc4mIFIx7AD0gK3qyvnA.jpg" width="300"/>
+     <h3>
+      Rika
+     </h3>
+     <p>
+      Master Teacher Fisika
+     </p>
+     <hr/>
+     <p>
+      Pengalaman dan prestasi
+     </p>
+     <ul>
+      <li>
+       <i class="fas fa-check-circle">
+       </i>
+       Master Sains di University College London dengan Beasiswa Chevening
+      </li>
+      
+     </ul>
+     
+    </div>
+   </div>
+   <div class="pagination">
+    <i class="fas fa-chevron-left" onclick="scrollLeft()">
+    </i><div class="card">
+     <img alt="Portrait of Fendi, Master Teacher Kimia" height="250" src="https://storage.googleapis.com/a1aa/image/t3eKUa19eGsbvUebcbptUpCjg7eWfeJjqEGACKlP80gAWVe7JA.jpg" width="300"/>
+     <h3>
+      Fendi
+     </h3>
+     <p>
+      Master Teacher Kimia
+     </p>
+     <hr/>
+     <p>
+      Pengalaman dan prestasi
+     </p>
+     <ul>
+      <li>
+       <i class="fas fa-check-circle">
+       </i>
+       Juara 1 Lomba Karya Tulis Ilmiah (LKTI) Budaya Jawa Tengah
+      </li>
+      <li>
+       <i class="fas fa-check-circle">
+       </i>
+       Juara 1 Lomba Karya Tulis Ilmiah (LKTI) Sains di Universitas Sebelas Maret (UNS)
+      </li>
+      
+     </ul>
+    <i class="fas fa-chevron-right" onclick="scrollRight()">
+    </i>
+   </div>
+  </div>
+  <script>
+   const container = document.getElementById('card-container');
 
+        function scrollLeft() {
+            container.scrollBy({ left: -300, behavior: 'smooth' });
+        }
+
+        function scrollRight() {
+            container.scrollBy({ left: 300, behavior: 'smooth' });
+        }
+  </script>
+ </body>
+</html>
+
+</SEction>
        <!-- rating -->
        <section id="penilaian">
   <div class="container">
@@ -239,18 +376,13 @@
     <p>
      Kasih Nilai
     </p>
-    <div class="stars">
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-    </div>
+    <div class="stars" data-rating="0">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
    </div>
    <div class="profile">
     <h3>
@@ -260,18 +392,13 @@
     <p>
      Kasih Nilai
     </p>
-    <div class="stars">
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-    </div>
+    <div class="stars" data-rating="0">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
    </div>
    <div class="profile">
     <h3>
@@ -281,18 +408,13 @@
     <p>
      Kasih Nilai
     </p>
-    <div class="stars">
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-    </div>
+    <div class="stars" data-rating="0">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
     
    </div>
    <div class="profile">
@@ -303,20 +425,38 @@
     <p>
      Kasih Nilai
     </p>
-    <div class="stars">
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-    </div> 
+    <div class="stars" data-rating="0">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            
+              </div>
    </div>
   </div>
+  <script>
+    document.querySelectorAll('.stars').forEach(function(starContainer) {
+        starContainer.addEventListener('click', function(e) {
+            if (e.target.classList.contains('star')) {
+                const ratingValue = e.target.getAttribute('data-value');
+                updateStars(starContainer, ratingValue);
+                console.log(`Rating yang diberikan: ${ratingValue}`);
+            }
+        });
+    });
+
+    function updateStars(container, rating) {
+        const stars = container.querySelectorAll('.star');
+        stars.forEach(function(star, index) {
+            if (index < rating) {
+                star.classList.add('active');
+            } else {
+                star.classList.remove('active');
+            }
+        });
+    }
+</script>
   </section>
 
 
@@ -338,6 +478,7 @@
                     <li><i class="fab fa-twitter"></i>iugdcuguj</li>
                     <li><i class="fab fa-tiktok"></i>bimbletrio</li>
                 </ul>
+                
             </div>
         </div>
     </div>
