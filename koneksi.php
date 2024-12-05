@@ -1,10 +1,10 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "bimbel";
+$host = "localhost"; // Ganti dengan host database Anda
+$username = "root"; // Ganti dengan username database Anda
+$password = ""; // Ganti dengan password database Anda
+$database = "bimbel"; // Ganti dengan nama database Anda
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = mysqli_connect($host, $username, $password, $database);
 
 // Periksa koneksi
 if (!$conn) {

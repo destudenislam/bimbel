@@ -1,4 +1,5 @@
 <?php
+
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +49,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost/bimbel/data_guru/data_guru.php">
+                    <a href="http://localhost/bimbel/DataGuru/data_guru.php">
                         <span class="icon">
                             <ion-icon name="people-outline"></ion-icon>
                         </span>
@@ -56,7 +57,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="http://localhost/bimbel/siswa/data_siswa.php">
                         <span class="icon">
                             <ion-icon name="person-outline"></ion-icon>
                         </span>
@@ -72,7 +73,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="http://localhost/bimbel/TingkatPendidikan/tingkat_pendidikan.php">
                         <span class="icon">
                             <ion-icon name="school-outline"></ion-icon>
                         </span>
@@ -104,13 +105,65 @@
                     </label>
                 </div>
             </div>
+<<<<<<< HEAD
+=======
+
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">131</div>
+                        <div class="cardName">Total Siswa</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">6</div>
+                        <div class="cardName">Total Guru</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">131</div>
+                        <div class="cardName">Pendaftar/bulan</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">$7,842</div>
+                        <div class="cardName">Total Pemasukan</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+>>>>>>> f4b016871729ffa76e8b4309f7ba788630562d5c
             <!-- ================ Order Details List ================= -->
             <div class="details">
                 <div class="recentOrders">
                     <div class="cardHeader">
-                        <h2>Grafik Total Siswa</h2>
-                    </div>
 
+                    </div>
+                    <br>
+                    <iframe title="project_bimbel" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=0a3724b7-6b69-4fa9-a6f3-bb004e166c74&autoAuth=true&ctid=5263cc81-5912-42c4-abc1-d0f1b668b530" frameborder="0" allowFullScreen="true"></iframe>
                 </div>
 
                 <!-- ================= New Customers ================ -->
