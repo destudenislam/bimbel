@@ -1,0 +1,448 @@
+#home{
+    /* background-color: #fff; */
+    height: 100vh;
+    background-image:url("Group 50.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar-brand{
+    font-family:Arial, sans-serif;
+    font-size:30px;
+    padding-right: 30px;
+    font-weight: bold;
+}
+ .btn-outline-success:hover{
+    background-color: #3498db; 
+    color: white;
+    border-color: #3498db; 
+    }
+    .btn-outline-success{
+        background-color: white; 
+        color: white; 
+        border-color: black; 
+        color: black;
+        }
+* {
+         margin: 0;
+         padding: 0;
+         font-family: 'Roboto', sans-serif;
+         
+     }
+     #home .container {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 50px;
+         /* background-color: #ffffff; */
+         height: 85vh;
+         left: 10px;
+         position: relative;
+     }
+     #home .left-section {
+         max-width: 100%;
+         
+     }
+     #home .left-section h1 {
+         font-size: 70px;
+         color: #002299;
+         margin: 15px 25px;
+         font-family: Arial, sans-serif;;
+         font-weight: bold;
+         padding-left: auto;
+     }
+     #home .left-section p {
+         font-size: 35px;
+         color: black;
+         margin: 10px 15px;
+         padding-left: 10px;
+         font-weight:normal;
+     }
+     #home .left-section .welcome {
+         font-size: 20px;
+         color: #3498db;
+         margin: 25px 19px;
+     }
+     #home .buttons {
+         display: flex;
+         gap: 25px;
+         margin: 28px;
+         margin-top: 15px;
+     }
+     #home .buttons .btn {
+         padding: 10px 20px;
+         font-size: 16px;
+         border-radius: 5px;
+         cursor: pointer;
+         text-decoration: none;
+     }
+     #home .buttons .btn-primary {
+         background-color: #3498db;
+         color: #ffffff;
+         border: none;
+         
+     }
+     #home .buttons .btn-secondary {
+         background-color: #ffffff;
+         color: #3498db;
+         
+     }
+     #home .right-section img {
+         max-width: 100%;
+         height: auto;
+     }
+     #home .background-circles {
+         position: absolute;
+         top: 0;
+         left: 100;
+         width: 100%;
+         height: 100%;
+         z-index: -1;
+     }
+     #home .background-circles .circle {
+         position: absolute;
+         border-radius: 50%;
+         background-color: #101d26;
+     }
+     #home .circle1 {
+         width: 100px;
+         height: 100px;
+         top: 20px;
+         left: 20px;
+     }
+     #home .circle2 {
+         width: 50px;
+         height: 50px;
+         top: 50px;
+         right: 50px;
+     }
+     #home .circle3 {
+         width: 150px;
+         height: 150px;
+         bottom: 20px;
+         right: 20px;
+     }
+
+     /* paket */
+   
+          #paket {
+            background-color: #002299;
+            padding-bottom: 100px;
+          }
+         #paket .container {
+              padding: 20px;
+          }
+          #paket .header {
+              background-color: #ffffff;
+              border-radius: 20px;
+              display: inline-block;
+              padding: 10px 20px;
+              font-size: 24px;
+              font-weight: bold;
+              color: #0033cc;
+              margin: 24px;
+          }
+          #paket .card-container {
+              display: flex;
+              justify-content: space-between;
+              margin-top: 20px;
+          }
+          #paket .card {
+              background-color: #ffffff;
+              border-radius: 20px;
+              width: 18%;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              text-align: center;
+              position: relative;
+          }
+          #paket  .card img {
+              width: 100%;
+              height: auto;
+          }
+          #paket .card-title {
+            margin: 10px;
+              background-color: #0033cc;
+              color: #ffffff;
+              padding: 10px 25px;
+              font-size: 12px;
+              font-weight: bold;
+              
+              position: absolute;
+              border-radius: 20px;
+          }
+          #paket .card-content {
+              padding: 20px;
+              font-size: 14px;
+              color: #333333;
+          }
+          #paket .card-button {
+              background-color: #0033cc;
+              color: #ffffff;
+              padding: 10px 5px;
+              border: none;
+              border-radius: 20px;
+              font-size: 16px;
+              cursor: pointer;
+              margin-bottom: 20px;
+              margin: 10px 20px;
+          }
+          #paket .card  a{
+            text-decoration: none;
+            color: white;
+          }
+          #paket  .card-button:hover {
+              background-color: #002299;
+          }
+          #paket .large-card {
+              background-color: #ffffff;
+              border-radius: 20px;
+              width: 21%;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              overflow: hidden;
+              text-align: center;
+              position: relative;
+              background-image: url(https://storage.googleapis.com/a1aa/image/yEwbsHeJsZVKfkLYlIvEfoBOQaRkTD2ss1rc7Uzodo9xT3hnA.jpg);
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+          }
+          #paket .large-card img {
+              width: 100%;
+              height: 1005;
+              
+          }
+          #paket  .large-card-title {
+              position: absolute;
+              top: 20px;
+              left: 20px;
+              color: #0033cc;
+              font-size: 18px;
+              font-weight: bold;
+          }
+          #paket  .large-card-title i {
+              margin-left: 10px;
+          }
+         #paket  .fas a{
+            text-decoration: none;
+            color: white;
+         }
+
+     /* keunggulan */
+
+       
+     #keunggulan {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: #002299;
+            padding-bottom: 30PX;
+        }
+        #keunggulan  .container {
+            background-color: white;
+            border: 2px solid #0000ff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        #keunggulan  .container h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        #keunggulan  .container ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        #keunggulan  .container ul li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+
+
+      /* juara */
+        
+        #juara {
+                 background-color: #002299;
+                 color: white;
+                 font-family: Arial, sans-serif;
+                 margin: 0 ;
+                 padding: 0;
+                width: 100%;
+                }
+                 
+             #juara .container {
+                 text-align: center;
+                 border-radius: 35px;
+                 padding: 50px;
+                 background-color: #000080;
+                 margin: 0 100PX;
+
+             }
+             #juara .title {
+                 font-size: 36px;
+                 font-weight: bold;
+                 margin-bottom: 50px;
+             }
+             #juara .user-experience1 {
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 margin-bottom: 50px;
+             }
+             #juara .user-experience img {
+                 border-radius: 10px;
+                 width: 150px;
+                 height: 150px;
+                 object-fit: cover;
+                 margin-right: 40px;
+                 margin-left: 40px;
+             }
+             #juara .user-details1 {
+                 text-align: left;
+                 max-width: 500px;
+                 padding-left: 10px;
+             }
+             #juara .picture2{
+                margin-right: 15px;
+            }
+                 /* baru */
+             #juara .user-details2 {
+                    text-align: left;
+                    max-width: 500px;
+             }
+             #juara .user-experience2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 50px; 
+                padding-left: 10px;
+            }
+            #juara .picture1{
+                margin-left: 40px; 
+            }
+
+             #juara .user-details h3 {
+                 font-size: 24px;
+                 font-weight: bold;
+                 margin: 0 0 10px 0;
+             }
+            #juara .user-details p {
+                 font-size: 16px;
+                 line-height: 1.5;
+                 margin: 0;
+             }
+  
+
+  /* rating */
+  #penilaian {
+    background-color: #002299 ;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#penilaian .profile {
+    border: 1px solid #000080;
+    border-radius: 20px;
+    background: white;
+}
+#penilaian .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+#penilaian .line {
+    width: 200px;
+    height: 50px;
+}
+#penilaian .container {
+    padding: 50px;
+}
+#penilaian  .profile {
+    display: inline-block;
+    margin: 20px;
+    color: black;
+}
+#penilaian .profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#penilaian .profile h3 {
+    margin: 10px 0 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#penilaian .profile p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+#penilaian .stars {
+    color: black;
+}
+#penilaian  .line {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+
+}
+
+/* tentang kami */
+
+#tentang {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0A2A45;
+    color: #FFFFFF;
+    
+}
+#tentang .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    text-align: center;
+}
+#tentang .content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+#tentang .left, .right {
+    width: 30%;
+    margin-bottom: 2PX;
+}
+#tentang .left {
+    text-align: left;
+}
+#tentang .right {
+    text-align: left;
+}
+#tentang .social-icons {
+    list-style: none;
+    padding: 0;
+}
+#tentang .social-icons li {
+    margin: 10px 0;
+}
+#tentang .social-icons i {
+    margin-right: 10px;
+}

@@ -35,21 +35,18 @@ $beritaData = mysqli_query($conn, "SELECT * FROM berita");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manajemen Berita - Rumah Bimbel Trio</title>
-    <link rel="stylesheet" href="berita/style.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="style.css">
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <!-- Sidebar Navigation -->
     <div class="container">
-        <div class="navigation">
+    <div class="navigation">
             <ul>
                 <li>
                     <a href="#">
-                        <span class="icon">
-                            <ion-icon name="logo-apple"></ion-icon>
-                        </span>
-                        <span class="title">Bimbel Trio</span>
+                        <span class="title">Rumah Bimbel Trio</span>
                     </a>
                 </li>
                 <li>
@@ -71,7 +68,7 @@ $beritaData = mysqli_query($conn, "SELECT * FROM berita");
                 <li>
                     <a href="http://localhost/bimbel/galeri/galeri.php">
                         <span class="icon">
-                            <ion-icon name="chatbubble-outline"></ion-icon>
+                            <ion-icon name="image-outline"></ion-icon>
                         </span>
                         <span class="title">Galeri</span>
                     </a>
@@ -79,7 +76,7 @@ $beritaData = mysqli_query($conn, "SELECT * FROM berita");
                 <li>
                     <a href="http://localhost/bimbel/data_guru/data_guru.php">
                         <span class="icon">
-                            <ion-icon name="help-outline"></ion-icon>
+                            <ion-icon name="people-outline"></ion-icon>
                         </span>
                         <span class="title">Data Guru</span>
                     </a>
@@ -87,7 +84,7 @@ $beritaData = mysqli_query($conn, "SELECT * FROM berita");
                 <li>
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="settings-outline"></ion-icon>
+                            <ion-icon name="person-outline"></ion-icon>
                         </span>
                         <span class="title">Data Siswa</span>
                     </a>
@@ -95,7 +92,7 @@ $beritaData = mysqli_query($conn, "SELECT * FROM berita");
                 <li>
                     <a href="http://localhost/bimbel/paket/paket.php">
                         <span class="icon">
-                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <ion-icon name="pricetag-outline"></ion-icon>
                         </span>
                         <span class="title">Paket</span>
                     </a>
@@ -103,7 +100,7 @@ $beritaData = mysqli_query($conn, "SELECT * FROM berita");
                 <li>
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="log-out-outline"></ion-icon>
+                            <ion-icon name="school-outline"></ion-icon>
                         </span>
                         <span class="title">Tingkat Pendidikan</span>
                     </a>
@@ -111,13 +108,14 @@ $beritaData = mysqli_query($conn, "SELECT * FROM berita");
                 <li>
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="cash-outline"></ion-icon>
+                            <ion-icon name="wallet-outline"></ion-icon>
                         </span>
                         <span class="title">Transaksi</span>
                     </a>
                 </li>
             </ul>
         </div>
+
         <!-- Main Content -->
         <div class="main">
             <div class="topbar">
