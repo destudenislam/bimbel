@@ -10,9 +10,7 @@ if (!$conn) {
 <head>
     <meta charset="UTF-8">
     <title>Gallery</title>
-    <style>
-        /* Tambahkan gaya seperti sebelumnya */
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Gallery</h1>
