@@ -27,59 +27,109 @@ body {
   width: 100%;
 }
 
-/* =============== sidebar ================ */
-/* Sidebar Container */
-.sidebar {
-  width: 250px;
-  height: 100vh;
-  background-color: #1f1f7a; /* Warna biru tua */
-  color: white;
+/* =============== Navigation ================ */
+.navigation {
   position: fixed;
+  width: 300px;
+  height: 100%;
+  background: var(--blue);
+  border-left: 10px solid var(--blue);
+  transition: 0.5s;
+  overflow: hidden;
+}
+.navigation.active {
+  width: 80px;
+}
+
+.navigation ul {
+  position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+}
+
+.navigation ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.navigation ul li:hover,
+.navigation ul li.hovered {
+  background-color: var(--white);
+}
+
+.navigation ul li:nth-child(1) {
+  margin-bottom: 40px;
+  pointer-events: none;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-/* Logo Section */
-.sidebar .logo {
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-/* Menu Styling */
-.sidebar .menu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar .menu li {
-  margin: 10px 0;
-}
-
-.sidebar .menu li a {
   text-decoration: none;
-  color: white;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  transition: all 0.3s;
+  color: var(--white);
+
+  
+}
+.navigation ul li:hover a,
+.navigation ul li.hovered a {
+  color: var(--blue);
 }
 
-.sidebar .menu li a:hover {
-  color: #ffcc00; /* Warna hover */
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 75px;
+  text-align: center;
+}
+.navigation ul li a .icon ion-icon {
+  font-size: 1.75rem;
 }
 
-/* Ikon pada Menu */
-.sidebar .menu li a i {
-  margin-right: 10px;
+.navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
 }
 
-
+/* --------- curve outside ---------- */
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10px var(--white);
+  pointer-events: none;
+}
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px -35px 0 10px var(--white);
+  pointer-events: none;
+}
 
 /* ===================== Main ===================== */
 .main {
@@ -359,10 +409,10 @@ body {
 
 /* ====================== Responsive Design ========================== */
 @media (max-width: 991px) {
-  .sidebar {
+  .navigation {
     left: -300px;
   }
-  .sidebar.active {
+  .navigation.active {
     width: 300px;
     left: 0;
   }
@@ -400,12 +450,12 @@ body {
   .user {
     min-width: 40px;
   }
-  .sidebar {
+  .navigation {
     width: 100%;
     left: -100%;
     z-index: 1000;
   }
-  .sidebar.active {
+  .navigation.active {
     width: 100%;
     left: 0;
   }
@@ -418,4 +468,94 @@ body {
     right: 0;
     left: initial;
   }
+}
+/* ========== Form Styling ========== */
+form {
+  background: var(--gray);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid var(--black2);
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+form textarea {
+  resize: none;
+  height: 100px;
+}
+
+form button {
+  padding: 10px 20px;
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background: var(--black1);
+}
+
+/* ========== Table Styling ========== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table thead {
+  background: var(--blue);
+  color: var(--white);
+}
+
+table th,
+table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--gray);
+}
+
+table tr:hover {
+  background: var(--gray);
+}
+
+table th {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+table td {
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+/* ========== Main Content Adjustments ========== */
+.main h1 {
+  font-size: 24px;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.main h2 {
+  font-size: 20px;
+  color: var(--black1);
+  margin-top: 40px;
+  margin-bottom: 20px;
 }

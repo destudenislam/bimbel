@@ -4,6 +4,50 @@ $conn = mysqli_connect("localhost", "root", "", "bimbel");
 if (!$conn) {
     die("Koneksi gagal: " . mysqli_connect_error());
 }
+// Jika URL memiliki parameter edit, ambil data berita berdasarkan ID
+// Jika URL memiliki parameter edit, ambil data berita berdasarkan ID
+if (isset($_GET['edit'])) {
+    $editMode = true;
+    $id = intval($_GET['edit']);
+    $result = mysqli_query($conn, "SELECT * FROM berita WHERE berita_id = $id");
+    $editData = mysqli_fetch_assoc($result);
+}
+
+// Proses Update Data
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
+    $id = intval($_POST['id']);
+    $judul = mysqli_real_escape_string($conn, $_POST['judul']);
+    $isi = mysqli_real_escape_string($conn, $_POST['isi']);
+    $tanggal = mysqli_real_escape_string($conn, $_POST['tanggal']);
+    $kategori = mysqli_real_escape_string($conn, $_POST['kategori']);
+    $admin_id = intval($_POST['admin_id']);
+    $sql = "UPDATE berita SET judul='$judul', isi='$isi', tanggal='$tanggal', kategori='$kategori', admin_id=$admin_id WHERE berita_id = $id";
+    if (mysqli_query($conn, $sql)) {
+        $message = "Berita berhasil diperbarui.";
+        $editMode = false; // Keluar dari mode edit
+    } else {
+        $message = "Error: " . mysqli_error($conn);
+    }
+}
+
+
+// Proses Update Data
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
+    $id = intval($_POST['id']);
+    $judul = mysqli_real_escape_string($conn, $_POST['judul']);
+    $isi = mysqli_real_escape_string($conn, $_POST['isi']);
+    $tanggal = mysqli_real_escape_string($conn, $_POST['tanggal']);
+    $kategori = mysqli_real_escape_string($conn, $_POST['kategori']);
+    $admin_id = intval($_POST['admin_id']);
+    $sql = "UPDATE berita SET judul='$judul', isi='$isi', tanggal='$tanggal', kategori='$kategori', admin_id=$admin_id WHERE berita_id = $id";
+    if (mysqli_query($conn, $sql)) {
+        $message = "Berita berhasil diperbarui.";
+        $editMode = false; // Keluar dari mode edit
+    } else {
+        $message = "Error: " . mysqli_error($conn);
+    }
+}
+
 
 // Variabel untuk menyimpan pesan dan data berita
 $message = "";
@@ -35,7 +79,7 @@ $beritaData = mysqli_query($conn, "SELECT * FROM berita");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manajemen Berita - Rumah Bimbel Trio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -50,7 +94,7 @@ $beritaData = mysqli_query($conn, "SELECT * FROM berita");
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="http://localhost/bimbel">
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
@@ -132,6 +176,18 @@ $beritaData = mysqli_query($conn, "SELECT * FROM berita");
                 Kategori: <input type="text" name="kategori" required><br>
                 Admin ID: <input type="number" name="admin_id" required><br>
                 <button type="submit" name="create">Tambah Berita</button>
+                <input type="hidden" name="id" value="<?= $editMode ? $editData['berita_id'] : '' ?>">
+    Judul: <input type="text" name="judul" value="<?= $editMode ? htmlspecialchars($editData['judul']) : '' ?>" required><br>
+    Isi: <textarea name="isi" required><?= $editMode ? htmlspecialchars($editData['isi']) : '' ?></textarea><br>
+    Tanggal: <input type="date" name="tanggal" value="<?= $editMode ? htmlspecialchars($editData['tanggal']) : '' ?>" required><br>
+    Kategori: <input type="text" name="kategori" value="<?= $editMode ? htmlspecialchars($editData['kategori']) : '' ?>" required><br>
+    Admin ID: <input type="number" name="admin_id" value="<?= $editMode ? htmlspecialchars($editData['admin_id']) : '' ?>" required><br>
+    <?php if ($editMode): ?>
+        <button type="submit" name="update">Update Berita</button>
+        <a href="berita.php">Batal</a>
+    <?php else: ?>
+        <button type="submit" name="create">Tambah Berita</button>
+    <?php endif; ?>
             </form>
             <h2>Daftar Berita</h2>
             <table border="1">
@@ -151,6 +207,12 @@ $beritaData = mysqli_query($conn, "SELECT * FROM berita");
                     <td><?= htmlspecialchars($row['tanggal']) ?></td>
                     <td><?= htmlspecialchars($row['kategori']) ?></td>
                     <td><?= htmlspecialchars($row['admin_id']) ?></td>
+                    <td>
+            <!-- Tombol Edit -->
+            <a href="update.php?id=<?= $row['berita_id'] ?>" class="btn btn-warning">Edit</a>
+            <!-- Tombol Delete -->
+            <a href="delete.php?id=<?= $row['berita_id'] ?>" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus berita ini?')">Delete</a>
+        </td>
                 </tr>
                 <?php endwhile; ?>
             </table>
