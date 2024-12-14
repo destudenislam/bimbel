@@ -148,6 +148,7 @@
             font-size: 18px;
             padding: 20px;
             font-weight: bold;
+            text-align: center;
           }
           #paket .card-container {
               display: flex;
@@ -180,9 +181,10 @@
               border-radius: 20px;
           }
           #paket .card-content {
-              padding: 20px;
+              padding: auto;
               font-size: 14px;
               color: #333333;
+              text-align: left;
           }
           #paket .card-button {
               background-color: #0033cc;
@@ -343,87 +345,7 @@
                  line-height: 1.5;
                  margin: 0;
              }
-  /* guru */
   
-  #guru {
-            font-family: Arial, sans-serif;
-            /* margin: 20px 250px;  */
-            padding: 5px auto;
-            background-color: #002299;
-            text-align: center;
-            color: white;
-            width: auto;
-
-        }
-        #guru.container {
-            padding: 20px;
-            
-        }
-        #guru.title {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        #guru .card-container {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            gap: 20px;
-            padding-bottom: 20px;
-            margin: 20px 50px;
-        }
-        #guru .card {
-            background: linear-gradient(180deg, #4A90E2 0%, #9013FE 100%);
-            border-radius: 10px;
-            color: white;
-            padding: 20px;
-            width: 300px;
-            height: 600px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            scroll-snap-align: start;
-            flex: 0 0 auto;
-        }
-        #guru .card img {
-            width: 100%;
-            border-radius: 10px 10px 0 0;
-        }
-        #guru .card h3 {
-            margin-top: 10px;
-            font-size: 20px;
-        }
-        #guru .card p {
-            margin: 10px 0;
-        }
-        #guru .card ul {
-            list-style: none;
-            padding: 0;
-        }
-        #guru .card ul li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        #guru.card ul li i {
-            margin-right: 10px;
-            color: #00d1b2;
-        }
-        #guru.pagination {
-            margin-top: 20px;
-        }
-        #guru.pagination i {
-            font-size: 24px;
-            color: #ff6f61;
-            margin: 0 10px;
-            cursor: pointer;
-        }
-         @media (max-width: 768px) {
-            .card-container {
-                flex-direction: row;
-                align-items: center;
-            }
-        }
-  
-
   /* rating */
   #penilaian {
     background-color: #002299 ;

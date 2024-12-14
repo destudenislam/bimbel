@@ -84,6 +84,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#002299" fill-opacity="1" d="M0,160L17.1,176C34.3,192,69,224,103,229.3C137.1,235,171,213,206,181.3C240,149,274,107,309,80C342.9,53,377,43,411,48C445.7,53,480,75,514,112C548.6,149,583,203,617,192C651.4,181,686,107,720,80C754.3,53,789,75,823,106.7C857.1,139,891,181,926,181.3C960,181,994,139,1029,149.3C1062.9,160,1097,224,1131,208C1165.7,192,1200,96,1234,53.3C1268.6,11,1303,21,1337,53.3C1371.4,85,1406,139,1423,165.3L1440,192L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path></svg>
 
     <!-- Paket -->
+     
      <section id="paket">
      <div class="container">
    <div class="header">
@@ -96,13 +97,14 @@
      </div>
      <img alt="Image of a teacher helping a student" height="200" src="https://storage.googleapis.com/a1aa/image/dtEGugprpkqvJBxqCfRYJNXZuTntnoXqn1U2QFOdmoX70d4JA.jpg" width="300"/>
      <div class="card-content">
-     1. Bahasa Indonesia
-      <br/>
-      2. Matematika
-      <br/>
-      3. Ilmu Pengetahuan Alam (IPA)
-      <br/>
-      4. Pendidikan Agama dan Budi Pekerti
+      <br>
+     <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;1.Bahasa Indonesia</style>
+      
+      <p style="text-align: left;">&nbsp;&nbsp;&nbsp;2. Matematika</style>
+      
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;3. Ilmu Pengetahuan Alam (IPA)</style>
+      
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;4.ahasa inggris</style>
       <div class="harga"
         <h1>Rp.1.0000<h1> 
       
@@ -118,12 +120,14 @@
      </div>
      <img alt="Image of a student studying with books" height="200" src="https://storage.googleapis.com/a1aa/image/6JNux1kivCquLBo2eVBvVlDfs1wQahwE90HBPNNvdKfnT3hnA.jpg" width="300"/>
      <div class="card-content">
-      Bahasa Indonesia
-      <br/>
-      MAtematika
-      <br/>
-      IPA
       <br>
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;1.Bahasa Indonesia</style>
+      
+      <p style="text-align: left;">&nbsp;&nbsp;&nbsp;2. Matematika</style>
+      
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;3. Ilmu Pengetahuan Alam (IPA)</style>
+      
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;4.ahasa inggris</style>
       <div class="harga"
         <h1>Rp.1.0000<h1> 
       
@@ -139,11 +143,14 @@
      </div>
      <img alt="Image of a student raising hand in class" height="200" src="https://storage.googleapis.com/a1aa/image/ZyG37HuAnOISJ5j2SZqiBKd66E7B1kcwxM9QCeRgOkC60d4JA.jpg" width="300"/>
      <div class="card-content">
-     Bahasa Indonesia
-      <br/>
-      MAtematika
-      <br/>
-      IPA
+      <br>
+     <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;1.Bahasa Indonesia</style>
+      
+      <p style="text-align: left;">&nbsp;&nbsp;&nbsp;2. Matematika</style>
+      
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;3. Ilmu Pengetahuan Alam (IPA)</style>
+     
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;4.ahasa inggris</style>
       <div class="harga"
         <h1>Rp.1.0000<h1> 
       
@@ -159,11 +166,14 @@
      </div>
      <img alt="Image of two students reading books" height="200" src="https://storage.googleapis.com/a1aa/image/MORCp972ygrHJlNYfeuU23GfT2B8ivb1Bv2O8i54QMPjT3hnA.jpg" width="300"/>
      <div class="card-content">
-     Bahasa Indonesia
-      <br/>
-      MAtematika
-      <br/>
-      IPA
+      <br>
+     <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;1.Bahasa Indonesia</style>
+      
+      <p style="text-align: left;">&nbsp;&nbsp;&nbsp;2. Matematika</style>
+      
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;3. Ilmu Pengetahuan Alam (IPA)</style>
+      
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;4.ahasa inggris</style>
       <div class="harga"
         <h1>Rp.1.0000<h1> 
       
@@ -222,144 +232,8 @@
   </div>
 </section>
 
-<!-- GURU -->
-<SEction id="guru">
-<html>
- <head>
-  <title>
-   Master Teachers
-  </title>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  
- </head>
- <body>
-  <div class="container">
-   <div class="title">
-    Kenalan dengan para Master Teacher berpengalaman
-   </div>
-   <div class="card-container" id="card-container">
-    <div class="card">
-     <img alt="Portrait of Vania, Master Teacher Bahasa Inggris" height="250" src="https://storage.googleapis.com/a1aa/image/x3OlofDfhTolZkvpYJHvCXfIsLi5B1xSEZmn7PuddYw1qyvnA.jpg" width="300"/>
-     <h3>
-      Vania
-     </h3>
-     <p>
-      Master Teacher Bahasa Inggris
-     </p>
-     <hr/>
-     <p>
-      Pengalaman dan prestasi
-     </p>
-     <ul>
-      <li>
-       <i class="fas fa-check-circle">
-       </i>
-       Diterima di 6 universitas luar negeri, termasuk Inggris, Australia, Belanda, dan Itali
-      </li>
-      <li>
-       <i class="fas fa-check-circle">
-       </i>
-       Master Teacher of The Month (April) - Brain Academy Online 2022
-      </li>
-      <li>
-      
-    </div>
-    <div class="card">
-     <img alt="Portrait of Fendi, Master Teacher Kimia" height="250" src="https://storage.googleapis.com/a1aa/image/t3eKUa19eGsbvUebcbptUpCjg7eWfeJjqEGACKlP80gAWVe7JA.jpg" width="300"/>
-     <h3>
-      Fendi
-     </h3>
-     <p>
-      Master Teacher Kimia
-     </p>
-     <hr/>
-     <p>
-      Pengalaman dan prestasi
-     </p>
-     <ul>
-      <li>
-       <i class="fas fa-check-circle">
-       </i>
-       Juara 1 Lomba Karya Tulis Ilmiah (LKTI) Budaya Jawa Tengah
-      </li>
-      <li>
-       <i class="fas fa-check-circle">
-       </i>
-       Juara 1 Lomba Karya Tulis Ilmiah (LKTI) Sains di Universitas Sebelas Maret (UNS)
-      </li>
-      
-     </ul>
-    </div>
-    <div class="card">
-     <img alt="Portrait of Rika, Master Teacher Fisika" height="250" src="https://storage.googleapis.com/a1aa/image/gMj1uevte1kc4UewtBqxvEbIBhNqFpc4mIFIx7AD0gK3qyvnA.jpg" width="300"/>
-     <h3>
-      Rika
-     </h3>
-     <p>
-      Master Teacher Fisika
-     </p>
-     <hr/>
-     <p>
-      Pengalaman dan prestasi
-     </p>
-     <ul>
-      <li>
-       <i class="fas fa-check-circle">
-       </i>
-       Master Sains di University College London dengan Beasiswa Chevening
-      </li>
-      
-     </ul>
-     
-    </div>
-   </div>
-   <div class="pagination">
-    <i class="fas fa-chevron-left" onclick="scrollLeft()">
-    </i><div class="card">
-     <img alt="Portrait of Fendi, Master Teacher Kimia" height="250" src="https://storage.googleapis.com/a1aa/image/t3eKUa19eGsbvUebcbptUpCjg7eWfeJjqEGACKlP80gAWVe7JA.jpg" width="300"/>
-     <h3>
-      Fendi
-     </h3>
-     <p>
-      Master Teacher Kimia
-     </p>
-     <hr/>
-     <p>
-      Pengalaman dan prestasi
-     </p>
-     <ul>
-      <li>
-       <i class="fas fa-check-circle">
-       </i>
-       Juara 1 Lomba Karya Tulis Ilmiah (LKTI) Budaya Jawa Tengah
-      </li>
-      <li>
-       <i class="fas fa-check-circle">
-       </i>
-       Juara 1 Lomba Karya Tulis Ilmiah (LKTI) Sains di Universitas Sebelas Maret (UNS)
-      </li>
-      
-     </ul>
-    <i class="fas fa-chevron-right" onclick="scrollRight()">
-    </i>
-   </div>
-  </div>
-  <script>
-   const container = document.getElementById('card-container');
 
-        function scrollLeft() {
-            container.scrollBy({ left: -300, behavior: 'smooth' });
-        }
 
-        function scrollRight() {
-            container.scrollBy({ left: 300, behavior: 'smooth' });
-        }
-  </script>
- </body>
-</html>
-
-</SEction>
        <!-- rating -->
        <section id="penilaian">
   <div class="container">

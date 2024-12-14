@@ -1,3 +1,12 @@
+<?php
+$conn = mysqli_connect("localhost", "root", "", "bimbel");
+if (!$conn) {
+    die("Koneksi gagal: " . mysqli_connect_error());
+}
+
+$sql = "SELECT * FROM siswa"; 
+$result = mysqli_query($conn, $sql);
+?>
 <!DOCTYPE html> 
 <html lang="en">
   <head>
