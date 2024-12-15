@@ -60,7 +60,7 @@
      Hallo, Selamat Datang
     </p>
     <div class="buttons">
-     <a class="btn btn-primary" href="http://localhost/bimbel/landingpage/login/login.html">
+     <a class="btn btn-primary" href="register_siswa.php">
       Daftar Siswa
      </a>
      <a class="btn btn-secondary" href="http://localhost/bimbel/landingpage/login/login.php"> 

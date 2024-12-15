@@ -71,7 +71,6 @@ $beritaData = mysqli_query($conn, "SELECT * FROM berita");
         <div class="navigation">
             <ul>
             <li><a href="#"><span class="title">Rumah Bimbel Trio</span></a></li>
-            <li><a href="#"><span class="title">Rumah Bimbel Trio</span></a></li>
                 <li><a href="http://localhost/bimbel"><span class="icon"><ion-icon name="home-outline"></ion-icon></span><span class="title">Dashboard</span></a></li>
                 <li><a href="http://localhost/bimbel/berita/berita.php"><span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span><span class="title">Berita</span></a></li>
                 <li><a href="http://localhost/bimbel/galeri/galeri.php"><span class="icon"><ion-icon name="image-outline"></ion-icon></span><span class="title">Galeri</span></a></li>

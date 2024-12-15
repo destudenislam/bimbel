@@ -31,98 +31,147 @@
          
      }
      #home .container {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         padding: 50px;
-         /* background-color: #ffffff; */
-         height: 85vh;
-         left: 10px;
-         position: relative;
-     }
-     #home .left-section {
-         max-width: 100%;
-         
-     }
-     #home .left-section h1 {
-         font-size: 70px;
-         color: #002299;
-         margin: 15px 25px;
-         font-family: Arial, sans-serif;;
-         font-weight: bold;
-         padding-left: auto;
-     }
-     #home .left-section p {
-         font-size: 35px;
-         color: black;
-         margin: 10px 15px;
-         padding-left: 10px;
-         font-weight:normal;
-     }
-     #home .left-section .welcome {
-         font-size: 20px;
-         color: #3498db;
-         margin: 25px 19px;
-     }
-     #home .buttons {
-         display: flex;
-         gap: 25px;
-         margin: 28px;
-         margin-top: 15px;
-     }
-     #home .buttons .btn {
-         padding: 10px 20px;
-         font-size: 16px;
-         border-radius: 5px;
-         cursor: pointer;
-         text-decoration: none;
-     }
-     #home .buttons .btn-primary {
-         background-color: #3498db;
-         color: #ffffff;
-         border: none;
-         
-     }
-     #home .buttons .btn-secondary {
-         background-color: #ffffff;
-         color: #3498db;
-         
-     }
-     #home .right-section img {
-         max-width: 100%;
-         height: auto;
-     }
-     #home .background-circles {
-         position: absolute;
-         top: 0;
-         left: 100;
-         width: 100%;
-         height: 100%;
-         z-index: -1;
-     }
-     #home .background-circles .circle {
-         position: absolute;
-         border-radius: 50%;
-         background-color: #101d26;
-     }
-     #home .circle1 {
-         width: 100px;
-         height: 100px;
-         top: 20px;
-         left: 20px;
-     }
-     #home .circle2 {
-         width: 50px;
-         height: 50px;
-         top: 50px;
-         right: 50px;
-     }
-     #home .circle3 {
-         width: 150px;
-         height: 150px;
-         bottom: 20px;
-         right: 20px;
-     }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        height: 85vh;
+        position: relative;
+        flex-wrap: wrap; /* Membuat elemen lebih responsif */
+    }
+    
+    #home .left-section {
+        max-width: 50%;
+        text-align: left;
+    }
+    
+    #home .left-section h1 {
+        font-size: 3.5rem;
+        color: #002299;
+        margin: 15px 25px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+    }
+    
+    #home .left-section p {
+        font-size: 1.8rem;
+        color: black;
+        margin: 10px 15px;
+        padding-left: 10px;
+        font-weight: normal;
+    }
+    
+    #home .left-section .welcome {
+        font-size: 1rem;
+        color:rgb(0, 0, 0);
+        margin: 25px 19px;
+    }
+    
+    #home .buttons {
+        display: flex;
+        gap: 15px;
+        margin: 20px;
+    }
+    
+    #home .buttons .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    #home .buttons .btn-primary {
+        background-color: #3498db;
+        color: #ffffff;
+        border: none;
+    }
+    
+    #home .buttons .btn-primary:hover {
+        background-color: #217dbb;
+    }
+    
+    #home .buttons .btn-secondary {
+        background-color: #ffffff;
+        color: #3498db;
+        border: 2px solid #3498db;
+    }
+    
+    #home .buttons .btn-secondary:hover {
+        background-color: #3498db;
+        color: #ffffff;
+    }
+    
+    #home .right-section img {
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+    }
+    
+    #home .background-circles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+    }
+    
+    #home .background-circles .circle {
+        position: absolute;
+        border-radius: 50%;
+        background-color: #101d26;
+    }
+    
+    #home .circle1 {
+        width: 100px;
+        height: 100px;
+        top: 20px;
+        left: 20px;
+    }
+    
+    #home .circle2 {
+        width: 50px;
+        height: 50px;
+        top: 50px;
+        right: 50px;
+    }
+    
+    #home .circle3 {
+        width: 150px;
+        height: 150px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    /* Tambahkan Responsivitas */
+    @media (max-width: 768px) {
+        #home .container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        #home .left-section {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    
+        #home .left-section h1 {
+            font-size: 2.5rem;
+        }
+    
+        #home .left-section p {
+            font-size: 1.2rem;
+        }
+    
+        #home .buttons {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    }
+    
 
      /* paket */
    

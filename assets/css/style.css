@@ -551,6 +551,7 @@ table td {
   font-size: 24px;
   color: var(--blue);
   margin-bottom: 20px;
+  align-items: center;
 }
 
 .main h2 {
