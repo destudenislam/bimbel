@@ -1,61 +1,63 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "bimbel");
-if (!$conn) {
-    die("Koneksi gagal: " . mysqli_connect_error());
+// Menghubungkan ke database
+$conn = new mysqli("localhost", "root", "", "bimbel");
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM siswa"; 
-$result = mysqli_query($conn, $sql);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Mengambil data login dari form
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']);
+
+    // Validasi input
+    if (empty($username) || empty($password)) {
+        echo "Username dan password tidak boleh kosong!";
+    } else {
+        // Menggunakan prepared statement
+        $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
+        $stmt->bind_param("s", $username);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            if (password_verify($password, $row['password'])) {
+                // Jika password benar, cek role
+                session_start();
+                $_SESSION['admin_logged_in'] = true;
+                $_SESSION['username'] = $username;
+                header("Location: http://localhost/bimbel/");
+                exit();
+            } else {
+                echo "Password salah!";
+            }
+        } else {
+            echo "Username tidak ditemukan!";
+        }
+    }
+}
 ?>
-<!DOCTYPE html> 
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Login & Signup Form</title>
+    <title>Login Form</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <section class="wrapper">
-        <div class="form login ">
+        <div class="form login">
             <header>Login</header>
-            <form action="#">
-              <input type="text" placeholder="Email address" required />
-              <input type="password" placeholder="Password" required />
-              <a href="#">Forgot password?</a>
-              <input type="submit" value="Login" />
+            <form action="login.php" method="POST">
+                <input type="text" name="username" placeholder="Username" required />
+                <input type="password" name="password" placeholder="Password" required />
+                <input type="submit" value="Login" />
             </form>
-          </div>
-    
-
-      <div class="form signup">
-        <header>Signup</header>
-        <form action="#">
-          <input type="text" placeholder="Full name" required />
-          <input type="text" placeholder="Email address" required />
-          <input type="password" placeholder="Password" required />
-          <div class="checkbox">
-            <input type="checkbox" id="signupCheck" />
-            <label for="Check">I accept all terms & conditions</label>
-          </div>
-          <input type="submit" value="Signup" />
-        </form>
-      </div>
-
-      <script>
-        const wrapper = document.querySelector(".wrapper"),
-          loginHeader = document.querySelector(".login header"),
-          signupHeader = document.querySelector(".signup header");
-          
-
-        loginHeader.addEventListener("click", () => {
-          wrapper.classList.add("active");
-        });
-        signupHeader.addEventListener("click", () => {
-          wrapper.classList.remove("active");
-        });
-      </script>
+        </div>
     </section>
-  </body>
+</body>
 </html>

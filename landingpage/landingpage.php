@@ -13,7 +13,7 @@
     
 <nav class=" navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class=" navbar-brand" href="#">Trio</a> 
+    <a class=" navbar-brand" href="#">RUMAH BELAJAR TRIO</a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -61,10 +61,10 @@
     </p>
     <div class="buttons">
      <a class="btn btn-primary" href="http://localhost/bimbel/landingpage/login/login.html">
-      Daftar
+      Daftar Siswa
      </a>
-     <a class="btn btn-secondary" href="http://localhost/bimbel/landingpage/login/login.html"> 
-      Login
+     <a class="btn btn-secondary" href="http://localhost/bimbel/landingpage/login/login.php"> 
+      Login Admin
      </a>
     </div>
    </div>

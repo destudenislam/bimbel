@@ -1,24 +1,31 @@
 <?php
-// Tambahkan koneksi database
+// Koneksi database
 $conn = mysqli_connect("localhost", "root", "", "bimbel");
+if (!$conn) {
+    die("Koneksi gagal: " . mysqli_connect_error());
+}
 
-// Inisialisasi variabel untuk pesan notifikasi
-$update_message = "";
+// Ambil data berdasarkan ID
+if (isset($_GET['id'])) {
+    $id = intval($_GET['id']);
+    $result = mysqli_query($conn, "SELECT * FROM berita WHERE berita_id = $id");
+    $data = mysqli_fetch_assoc($result);
+}
 
-// Logika untuk memperbarui data
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
-    $id = $_POST['berita_id'];
-    $judul = $_POST['judul'];
-    $isi = $_POST['isi'];
-    $tanggal = $_POST['tanggal'];
-    $kategori = $_POST['kategori'];
-    $admin_id = $_POST['admin_id'];
-
-    $sql = "UPDATE berita SET judul='$judul', isi='$isi', tanggal='$tanggal', kategori='$kategori', admin_id='$admin_id' WHERE berita_id=$id";
+// Proses Update Data
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $id = intval($_POST['id']);
+    $judul = mysqli_real_escape_string($conn, $_POST['judul']);
+    $isi = mysqli_real_escape_string($conn, $_POST['isi']);
+    $tanggal = mysqli_real_escape_string($conn, $_POST['tanggal']);
+    $kategori = mysqli_real_escape_string($conn, $_POST['kategori']);
+    $admin_id = intval($_POST['admin_id']);
+    $sql = "UPDATE berita SET judul='$judul', isi='$isi', tanggal='$tanggal', kategori='$kategori', admin_id=$admin_id WHERE berita_id = $id";
     if (mysqli_query($conn, $sql)) {
-        $update_message = "Berita berhasil diperbarui.";
+        header("Location: berita.php?message=updated");
+        exit();
     } else {
-        $update_message = "Error: " . $sql . "<br>" . mysqli_error($conn);
+        $message = "Error: " . mysqli_error($conn);
     }
 }
 ?>
@@ -28,31 +35,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update Berita</title>
-    <script>
-        // Fungsi JavaScript untuk menghilangkan pesan setelah beberapa detik
-        function hideMessage() {
-            setTimeout(function() {
-                document.getElementById('update-message').style.display = 'none';
-            }, 3000); // 3000 ms = 3 detik
-        }
-    </script>
+    <title>Edit Berita</title>
 </head>
-<body onload="hideMessage()">
-
-<?php if ($update_message): ?>
-    <div id="update-message"><?= $update_message ?></div>
-<?php endif; ?>
-
-<h2>Update Berita</h2>
-<form method="POST" action="">
-    Judul: <input type="text" name="judul" required><br>
-    Isi: <textarea name="isi" required></textarea><br>
-    Tanggal: <input type="date" name="tanggal" required><br>
-    Kategori: <input type="text" name="kategori" required><br>
-    Admin ID: <input type="number" name="admin_id" required><br>
-    <button type="submit" name="update">Update Berita</button>
-</form>
-
+<body>
+    <h1>Edit Berita</h1>
+    <form method="POST" action="">
+        <input type="hidden" name="id" value="<?= $data['berita_id'] ?>">
+        Judul: <input type="text" name="judul" value="<?= htmlspecialchars($data['judul']) ?>" required><br>
+        Isi: <textarea name="isi" required><?= htmlspecialchars($data['isi']) ?></textarea><br>
+        Tanggal: <input type="date" name="tanggal" value="<?= $data['tanggal'] ?>" required><br>
+        Kategori: <input type="text" name="kategori" value="<?= htmlspecialchars($data['kategori']) ?>" required><br>
+        Admin ID: <input type="number" name="admin_id" value="<?= $data['admin_id'] ?>" required><br>
+        <button type="submit">Update Berita</button>
+    </form>
 </body>
 </html>

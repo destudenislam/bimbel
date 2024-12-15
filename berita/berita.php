@@ -4,55 +4,19 @@ $conn = mysqli_connect("localhost", "root", "", "bimbel");
 if (!$conn) {
     die("Koneksi gagal: " . mysqli_connect_error());
 }
-// Jika URL memiliki parameter edit, ambil data berita berdasarkan ID
-// Jika URL memiliki parameter edit, ambil data berita berdasarkan ID
-if (isset($_GET['edit'])) {
-    $editMode = true;
-    $id = intval($_GET['edit']);
-    $result = mysqli_query($conn, "SELECT * FROM berita WHERE berita_id = $id");
-    $editData = mysqli_fetch_assoc($result);
-}
-
-// Proses Update Data
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
-    $id = intval($_POST['id']);
-    $judul = mysqli_real_escape_string($conn, $_POST['judul']);
-    $isi = mysqli_real_escape_string($conn, $_POST['isi']);
-    $tanggal = mysqli_real_escape_string($conn, $_POST['tanggal']);
-    $kategori = mysqli_real_escape_string($conn, $_POST['kategori']);
-    $admin_id = intval($_POST['admin_id']);
-    $sql = "UPDATE berita SET judul='$judul', isi='$isi', tanggal='$tanggal', kategori='$kategori', admin_id=$admin_id WHERE berita_id = $id";
-    if (mysqli_query($conn, $sql)) {
-        $message = "Berita berhasil diperbarui.";
-        $editMode = false; // Keluar dari mode edit
-    } else {
-        $message = "Error: " . mysqli_error($conn);
-    }
-}
-
-
-// Proses Update Data
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
-    $id = intval($_POST['id']);
-    $judul = mysqli_real_escape_string($conn, $_POST['judul']);
-    $isi = mysqli_real_escape_string($conn, $_POST['isi']);
-    $tanggal = mysqli_real_escape_string($conn, $_POST['tanggal']);
-    $kategori = mysqli_real_escape_string($conn, $_POST['kategori']);
-    $admin_id = intval($_POST['admin_id']);
-    $sql = "UPDATE berita SET judul='$judul', isi='$isi', tanggal='$tanggal', kategori='$kategori', admin_id=$admin_id WHERE berita_id = $id";
-    if (mysqli_query($conn, $sql)) {
-        $message = "Berita berhasil diperbarui.";
-        $editMode = false; // Keluar dari mode edit
-    } else {
-        $message = "Error: " . mysqli_error($conn);
-    }
-}
-
 
 // Variabel untuk menyimpan pesan dan data berita
 $message = "";
 $editMode = false;
 $editData = null;
+
+// Jika ada parameter 'edit', ambil data berita yang akan diedit
+if (isset($_GET['edit']) && is_numeric($_GET['edit'])) {
+    $editMode = true;
+    $id = intval($_GET['edit']);
+    $result = mysqli_query($conn, "SELECT * FROM berita WHERE berita_id = $id");
+    $editData = mysqli_fetch_assoc($result);
+}
 
 // Fungsi untuk menambahkan data
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['create'])) {
@@ -63,7 +27,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['create'])) {
     $admin_id = intval($_POST['admin_id']);
     $sql = "INSERT INTO berita (judul, isi, tanggal, kategori, admin_id) VALUES ('$judul', '$isi', '$tanggal', '$kategori', $admin_id)";
     if (mysqli_query($conn, $sql)) {
-        $message = "Berita berhasil ditambahkan.";
+        header("Location: berita.php?message=added");
+        exit();
+    } else {
+        $message = "Error: " . mysqli_error($conn);
+    }
+}
+
+// Fungsi untuk mengupdate data
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
+    $id = intval($_POST['id']);
+    $judul = mysqli_real_escape_string($conn, $_POST['judul']);
+    $isi = mysqli_real_escape_string($conn, $_POST['isi']);
+    $tanggal = mysqli_real_escape_string($conn, $_POST['tanggal']);
+    $kategori = mysqli_real_escape_string($conn, $_POST['kategori']);
+    $admin_id = intval($_POST['admin_id']);
+    $sql = "UPDATE berita SET judul='$judul', isi='$isi', tanggal='$tanggal', kategori='$kategori', admin_id=$admin_id WHERE berita_id = $id";
+    if (mysqli_query($conn, $sql)) {
+        header("Location: berita.php?message=updated");
+        exit();
     } else {
         $message = "Error: " . mysqli_error($conn);
     }
@@ -80,115 +62,48 @@ $beritaData = mysqli_query($conn, "SELECT * FROM berita");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manajemen Berita - Rumah Bimbel Trio</title>
     <link rel="stylesheet" href="../assets/css/style.css">
-     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <!-- Sidebar Navigation -->
     <div class="container">
-    <div class="navigation">
+        <div class="navigation">
             <ul>
-                <li>
-                    <a href="#">
-                        <span class="title">Rumah Bimbel Trio</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://localhost/bimbel">
-                        <span class="icon">
-                            <ion-icon name="home-outline"></ion-icon>
-                        </span>
-                        <span class="title">Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://localhost/bimbel/berita/berita.php">
-                        <span class="icon">
-                            <ion-icon name="newspaper-outline"></ion-icon>
-                        </span>
-                        <span class="title">Berita</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://localhost/bimbel/galeri/galeri.php">
-                        <span class="icon">
-                            <ion-icon name="image-outline"></ion-icon>
-                        </span>
-                        <span class="title">Galeri</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://localhost/bimbel/data_guru/data_guru.php">
-                        <span class="icon">
-                            <ion-icon name="people-outline"></ion-icon>
-                        </span>
-                        <span class="title">Data Guru</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="person-outline"></ion-icon>
-                        </span>
-                        <span class="title">Data Siswa</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://localhost/bimbel/paket/paket.php">
-                        <span class="icon">
-                            <ion-icon name="pricetag-outline"></ion-icon>
-                        </span>
-                        <span class="title">Paket</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="school-outline"></ion-icon>
-                        </span>
-                        <span class="title">Tingkat Pendidikan</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="wallet-outline"></ion-icon>
-                        </span>
-                        <span class="title">Transaksi</span>
-                    </a>
-                </li>
+            <li><a href="#"><span class="title">Rumah Bimbel Trio</span></a></li>
+            <li><a href="#"><span class="title">Rumah Bimbel Trio</span></a></li>
+                <li><a href="http://localhost/bimbel"><span class="icon"><ion-icon name="home-outline"></ion-icon></span><span class="title">Dashboard</span></a></li>
+                <li><a href="http://localhost/bimbel/berita/berita.php"><span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span><span class="title">Berita</span></a></li>
+                <li><a href="http://localhost/bimbel/galeri/galeri.php"><span class="icon"><ion-icon name="image-outline"></ion-icon></span><span class="title">Galeri</span></a></li>
+                <li><a href="http://localhost/bimbel/DataGuru/data_guru.php"><span class="icon"><ion-icon name="people-outline"></ion-icon></span><span class="title">Data Guru</span></a></li>
+                <li><a href="http://localhost/bimbel/siswa/data_siswa.php"><span class="icon"><ion-icon name="person-outline"></ion-icon></span><span class="title">Data Siswa</span></a></li>
+                <li><a href="http://localhost/bimbel/paket/paket.php"><span class="icon"><ion-icon name="pricetag-outline"></ion-icon></span><span class="title">Paket</span></a></li>
+                <li><a href="http://localhost/bimbel/TingkatPendidikan/tingkat_pendidikan.php"><span class="icon"><ion-icon name="school-outline"></ion-icon></span><span class="title">Tingkat Pendidikan</span></a></li>
+                <li><a href="http://localhost/bimbel/transaksi/transaksi.php"><span class="icon"><ion-icon name="wallet-outline"></ion-icon></span><span class="title">Transaksi</span></a></li>
             </ul>
         </div>
 
         <!-- Main Content -->
         <div class="main">
-            <div class="topbar">
-                <div class="toggle">
-                    <ion-icon name="menu-outline"></ion-icon>
-                </div>
-            </div>
+        
             <h1>Manajemen Berita</h1>
+
             <!-- Form Tambah/Edit -->
             <form method="POST" action="">
-                Judul: <input type="text" name="judul" required><br>
-                Isi: <textarea name="isi" required></textarea><br>
-                Tanggal: <input type="date" name="tanggal" required><br>
-                Kategori: <input type="text" name="kategori" required><br>
-                Admin ID: <input type="number" name="admin_id" required><br>
-                <button type="submit" name="create">Tambah Berita</button>
-                <input type="hidden" name="id" value="<?= $editMode ? $editData['berita_id'] : '' ?>">
-    Judul: <input type="text" name="judul" value="<?= $editMode ? htmlspecialchars($editData['judul']) : '' ?>" required><br>
-    Isi: <textarea name="isi" required><?= $editMode ? htmlspecialchars($editData['isi']) : '' ?></textarea><br>
-    Tanggal: <input type="date" name="tanggal" value="<?= $editMode ? htmlspecialchars($editData['tanggal']) : '' ?>" required><br>
-    Kategori: <input type="text" name="kategori" value="<?= $editMode ? htmlspecialchars($editData['kategori']) : '' ?>" required><br>
-    Admin ID: <input type="number" name="admin_id" value="<?= $editMode ? htmlspecialchars($editData['admin_id']) : '' ?>" required><br>
-    <?php if ($editMode): ?>
-        <button type="submit" name="update">Update Berita</button>
-        <a href="berita.php">Batal</a>
-    <?php else: ?>
-        <button type="submit" name="create">Tambah Berita</button>
-    <?php endif; ?>
+                <input type="hidden" name="id" value="<?= $editMode ? htmlspecialchars($editData['berita_id']) : '' ?>">
+                Judul: <input type="text" name="judul" value="<?= $editMode ? htmlspecialchars($editData['judul']) : '' ?>" required><br>
+                Isi: <textarea name="isi" required><?= $editMode ? htmlspecialchars($editData['isi']) : '' ?></textarea><br>
+                Tanggal: <input type="date" name="tanggal" value="<?= $editMode ? htmlspecialchars($editData['tanggal']) : '' ?>" required><br>
+                Kategori: <input type="text" name="kategori" value="<?= $editMode ? htmlspecialchars($editData['kategori']) : '' ?>" required><br>
+                Admin ID: <input type="number" name="admin_id" value="<?= $editMode ? htmlspecialchars($editData['admin_id']) : '' ?>" required><br>
+
+                <?php if ($editMode): ?>
+                    <button type="submit" name="update">Update Berita</button>
+                <?php else: ?>
+                    <button type="submit" name="create">Tambah Berita</button>
+                <?php endif; ?>
             </form>
+
             <h2>Daftar Berita</h2>
             <table border="1">
                 <tr>
@@ -198,22 +113,23 @@ $beritaData = mysqli_query($conn, "SELECT * FROM berita");
                     <th>Tanggal</th>
                     <th>Kategori</th>
                     <th>Admin ID</th>
+                    <th>Aksi</th>
                 </tr>
                 <?php while ($row = mysqli_fetch_assoc($beritaData)): ?>
-                <tr>
-                    <td><?= htmlspecialchars($row['berita_id']) ?></td>
-                    <td><?= htmlspecialchars($row['judul']) ?></td>
-                    <td><?= htmlspecialchars($row['isi']) ?></td>
-                    <td><?= htmlspecialchars($row['tanggal']) ?></td>
-                    <td><?= htmlspecialchars($row['kategori']) ?></td>
-                    <td><?= htmlspecialchars($row['admin_id']) ?></td>
-                    <td>
-            <!-- Tombol Edit -->
-            <a href="update.php?id=<?= $row['berita_id'] ?>" class="btn btn-warning">Edit</a>
-            <!-- Tombol Delete -->
-            <a href="delete.php?id=<?= $row['berita_id'] ?>" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus berita ini?')">Delete</a>
-        </td>
-                </tr>
+                    <tr>
+                        <td><?= htmlspecialchars($row['berita_id']) ?></td>
+                        <td><?= htmlspecialchars($row['judul']) ?></td>
+                        <td><?= htmlspecialchars($row['isi']) ?></td>
+                        <td><?= htmlspecialchars($row['tanggal']) ?></td>
+                        <td><?= htmlspecialchars($row['kategori']) ?></td>
+                        <td><?= htmlspecialchars($row['admin_id']) ?></td>
+                        <td>
+                            <!-- Tombol Edit -->
+                            <a href="berita.php?edit=<?= $row['berita_id'] ?>" class="btn btn-warning">Edit</a>
+                            <!-- Tombol Delete -->
+                            <a href="delete.php?id=<?= $row['berita_id'] ?>" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus berita ini?')">Delete</a>
+                        </td>
+                    </tr>
                 <?php endwhile; ?>
             </table>
         </div>

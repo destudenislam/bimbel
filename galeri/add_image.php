@@ -1,48 +1,31 @@
 <?php
 $conn = mysqli_connect("localhost", "root", "", "bimbel");
 if (!$conn) {
-    die("Koneksi gagal: " . mysqli_connect_error());
+    die("Connection failed: " . mysqli_connect_error());
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $deskripsi = $_POST['deskripsi'];
-    $tanggal_upload = date('Y-m-d');
-    $target_dir = "uploads/";
-    $target_file = $target_dir . basename($_FILES["file"]["name"]);
+    if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
+        $uploadDir = '../galeri/uploads/';
+        $fileName = basename($_FILES['image']['name']);
+        $targetFilePath = $uploadDir . $fileName;
 
-    if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
-        $url_foto = $target_file;
+        if (move_uploaded_file($_FILES['image']['tmp_name'], $targetFilePath)) {
+            $description = mysqli_real_escape_string($conn, $_POST['description']);
+            $uploadDate = date('Y-m-d H:i:s');
+            $query = "INSERT INTO galeri (deskripsi, url_foto, tanggal_upload, admin_id)
+                      VALUES ('$description', '$targetFilePath', '$uploadDate', 1)";
 
-        $stmt = $conn->prepare("INSERT INTO galeri (deskripsi, url_foto, tanggal_upload) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $deskripsi, $url_foto, $tanggal_upload);
-
-        if ($stmt->execute()) {
-            echo "Image uploaded successfully.";
-            header("Location: galeri.php");
+            if (mysqli_query($conn, $query)) {
+                echo "Image uploaded successfully!";
+            } else {
+                echo "Database error: " . mysqli_error($conn);
+            }
         } else {
-            echo "Error: " . $stmt->error;
+            echo "Error uploading file.";
         }
-        $stmt->close();
     } else {
-        echo "Error uploading file.";
+        echo "No file uploaded or upload error.";
     }
 }
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Add Image</title>
-</head>
-<body>
-    <h1>Add New Image</h1>
-    <form action="" method="post" enctype="multipart/form-data">
-        <label for="deskripsi">Description:</label><br>
-        <textarea name="deskripsi" id="deskripsi" rows="4" cols="50" required></textarea><br><br>
-        <label for="file">Select Image:</label><br>
-        <input type="file" name="file" id="file" accept="image/*" required><br><br>
-        <button type="submit">Upload</button>
-    </form>
-</body>
-</html>
