@@ -1,8 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "bimbel");
-if (!$conn) {
-    die("Koneksi gagal: " . mysqli_connect_error());
-}
+include 'koneksi.php';
 
 // Jika form disubmit
 if (isset($_POST['update'])) {

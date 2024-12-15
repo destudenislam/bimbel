@@ -1,13 +1,19 @@
 <?php
-$host = "localhost"; // Ganti dengan host database Anda
-$username = "root"; // Ganti dengan username database Anda
-$password = ""; // Ganti dengan password database Anda
-$database = "bimbel"; // Ganti dengan nama database Anda
+$host = "bimtrio.mif.myhost.id";
+$username = "mifmyho2_bimtrio";
+$password = "@Mif2024";
+$dbname = "mifmyho2_bimtrio";
 
-$conn = mysqli_connect($host, $username, $password, $database);
+// Establishing the connection
+$conn = mysqli_connect($host, $username, $password, $dbname);
 
-// Periksa koneksi
-if (!$conn) {
-  die("Koneksi gagal: " . mysqli_connect_error());
+// Checking the connection
+if ($conn) {
+    // Redirecting to index.php if the connection is successful
+    header("Location: http://bimtrio.mif.myhost.id/landingpage/landingpage.php");
+    exit();  // It's important to call exit() after header() to stop further script execution
+} else {
+    // Display error message if connection fails
+    die("Koneksi gagal: " . mysqli_connect_error());
 }
 ?>

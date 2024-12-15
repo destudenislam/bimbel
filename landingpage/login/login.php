@@ -1,3 +1,47 @@
+<?php
+// Koneksi ke database
+include "koneksi.php";
+
+session_start(); // Mulai sesi
+
+// Jika pengguna sudah login, arahkan langsung ke dashboard
+if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true) {
+    header("Location: http://bimtrio.mif.myhost.id"); // URL dashboard
+    exit();
+}
+
+// Proses login jika form dikirim
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Ambil data dari form login
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']);
+
+    // Validasi input
+    if (empty($username) || empty($password)) {
+        $error = "Username dan password tidak boleh kosong!";
+    } else {
+        // Query ke database untuk mencocokkan username dan password
+        $stmt = $conn->prepare("SELECT * FROM users WHERE username = ? AND password = ?");
+        $stmt->bind_param("ss", $username, $password); // Karena password tersimpan dalam teks biasa
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($result->num_rows > 0) {
+            // Login berhasil
+            $row = $result->fetch_assoc();
+            $_SESSION['admin_logged_in'] = true;
+            $_SESSION['username'] = $row['username'];
+
+            // Redirect ke dashboard
+            header("Location: index.php");
+            exit();
+        } else {
+            $error = "Username atau password salah!";
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -76,7 +120,7 @@
     <div class="login-container">
         <h1>Login Admin</h1>
         <?php if (isset($error)) { echo "<p class='error'>" . $error . "</p>"; } ?>
-        <form method="POST" action="">
+        <form method="POST" action="index.php">
             <div class="form-control">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" placeholder="Masukkan username" required>
@@ -89,7 +133,7 @@
         </form>
 
         <!-- Tombol Kembali ke Landing Page -->
-        <form action="http://localhost/bimbel/landingpage/landingpage.php" method="get">
+        <form action="http://bimtrio.mif.myhost.id/landingpage/landingpage.php" method="get">
             <button type="submit" class="back-button">Kembali ke Landing Page</button>
         </form>
     </div>

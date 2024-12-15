@@ -1,22 +1,20 @@
 <?php
 // Koneksi ke database
-$conn = new mysqli("localhost", "root", "", "bimbel");
-if ($conn->connect_error) {
-    die("Koneksi gagal: " . $conn->connect_error);
-}
+include 'koneksi.php';
+
 
 session_start();
 
 // Cek apakah pengguna sudah login
 if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
-    header("Location: http://localhost/bimbel/login.php"); // Arahkan ke halaman login jika belum login
+    header("Location: http://bimtrio.mif.myhost.id/bimbel/index.php"); // Arahkan ke halaman login jika belum login
     exit();
 }
 
 // Proses logout
 if (isset($_GET['logout'])) {
     session_destroy();
-    header("Location: http://localhost/bimbel/login.php"); // Arahkan kembali ke login setelah logout
+    header("Location: http://bimtrio.mif.myhost.id/bimbel/login.php"); // Arahkan kembali ke login setelah logout
     exit();
 }
 ?>
@@ -43,7 +41,7 @@ if (isset($_GET['logout'])) {
     </a>
 </li>
 <li>
-    <a href="http://localhost/bimbel">
+    <a href="http://bimtrio.mif.myhost.id/bimbel">
         <span class="icon">
             <ion-icon name="home-outline"></ion-icon>
         </span>
@@ -51,7 +49,7 @@ if (isset($_GET['logout'])) {
     </a>
 </li>
 <li>
-    <a href="http://localhost/bimbel/berita/berita.php">
+    <a href="http://bimtrio.mif.myhost.id/bimbel/berita/berita.php">
         <span class="icon">
             <ion-icon name="newspaper-outline"></ion-icon>
         </span>
@@ -59,7 +57,7 @@ if (isset($_GET['logout'])) {
     </a>
 </li>
 <li>
-    <a href="http://localhost/bimbel/galeri/galeri.php">
+    <a href="http://bimtrio.mif.myhost.id/bimbel/galeri/galeri.php">
         <span class="icon">
             <ion-icon name="image-outline"></ion-icon>
         </span>
@@ -67,7 +65,7 @@ if (isset($_GET['logout'])) {
     </a>
 </li>
 <li>
-    <a href="http://localhost/bimbel/DataGuru/data_guru.php">
+    <a href="http://bimtrio.mif.myhost.id/bimbel/DataGuru/data_guru.php">
         <span class="icon">
             <ion-icon name="people-outline"></ion-icon>
         </span>
@@ -75,7 +73,7 @@ if (isset($_GET['logout'])) {
     </a>
 </li>
 <li>
-    <a href="http://localhost/bimbel/siswa/data_siswa.php">
+    <a href="http://bimtrio.mif.myhost.id/bimbel/siswa/data_siswa.php">
         <span class="icon">
             <ion-icon name="person-outline"></ion-icon>
         </span>
@@ -83,7 +81,7 @@ if (isset($_GET['logout'])) {
     </a>
 </li>
 <li>
-    <a href="http://localhost/bimbel/paket/paket.php">
+    <a href="http://bimtrio.mif.myhost.id/bimbel/paket/paket.php">
         <span class="icon">
             <ion-icon name="pricetag-outline"></ion-icon>
         </span>
@@ -91,7 +89,7 @@ if (isset($_GET['logout'])) {
     </a>
 </li>
 <li>
-    <a href="http://localhost/bimbel/TingkatPendidikan/tingkat_pendidikan.php">
+    <a href="http://bimtrio.mif.myhost.id/bimbel/TingkatPendidikan/tingkat_pendidikan.php">
         <span class="icon">
             <ion-icon name="school-outline"></ion-icon>
         </span>
@@ -99,7 +97,7 @@ if (isset($_GET['logout'])) {
     </a>
 </li>
 <li>
-    <a href="http://localhost/bimbel/transaksi/transaksi.php">
+    <a href="http://bimtrio.mif.myhost.id/bimbel/transaksi/transaksi.php">
         <span class="icon">
             <ion-icon name="wallet-outline"></ion-icon>
         </span>
@@ -107,7 +105,7 @@ if (isset($_GET['logout'])) {
     </a>
 </li>
 <li>
-    <a href="http://localhost/bimbel/landingpage/login/login.php">
+    <a href="http://bimtrio.mif.myhost.id/bimbel/landingpage/login/login.php">
         <span class="icon">
             <ion-icon name="log-out-outline"></ion-icon>
         </span>

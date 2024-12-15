@@ -1,11 +1,5 @@
 <?php
-// Koneksi ke database
-$conn = mysqli_connect("localhost", "root", "", "bimbel");
-
-// Cek koneksi
-if (!$conn) {
-    die("Koneksi gagal: " . mysqli_connect_error());
-}
+include 'koneksi.php';
 
 // Jika form dikirim
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

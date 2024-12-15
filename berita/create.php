@@ -1,6 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "bimbel");
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['create'])) {
+include 'koneksi.php';if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['create'])) {
     $judul = $_POST['judul'];
     $isi = $_POST['isi'];
     $tanggal = $_POST['tanggal'];

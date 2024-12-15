@@ -1,9 +1,6 @@
 <?php
 // Koneksi database
-$conn = mysqli_connect("localhost", "root", "", "bimbel");
-if (!$conn) {
-    die("Koneksi gagal: " . mysqli_connect_error());
-}
+include 'koneksi.php';
 
 // Ambil data berdasarkan ID
 if (isset($_GET['id'])) {

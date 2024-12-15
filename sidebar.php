@@ -14,7 +14,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost/bimbel/berita/berita.php">
+                    <a href="http://bimtrio.mif.myhost.id/berita/berita.php">
                         <span class="icon">
                             <ion-icon name="newspaper-outline"></ion-icon>
                         </span>
@@ -22,7 +22,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost/bimbel/galeri/galeri.php">
+                    <a href="http://bimtrio.mif.myhost.id/galeri/galeri.php">
                         <span class="icon">
                             <ion-icon name="image-outline"></ion-icon>
                         </span>
@@ -30,7 +30,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost/bimbel/DataGuru/data_guru.php">
+                    <a href="http://bimtrio.mif.myhost.id/DataGuru/data_guru.php">
                         <span class="icon">
                             <ion-icon name="people-outline"></ion-icon>
                         </span>
@@ -38,7 +38,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost/bimbel/siswa/data_siswa.php">
+                    <a href="http://bimtrio.mif.myhost.id/siswa/data_siswa.php">
                         <span class="icon">
                             <ion-icon name="person-outline"></ion-icon>
                         </span>
@@ -46,7 +46,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost/bimbel/paket/paket.php">
+                    <a href="http://bimtrio.mif.myhost.id/paket/paket.php">
                         <span class="icon">
                             <ion-icon name="pricetag-outline"></ion-icon>
                         </span>

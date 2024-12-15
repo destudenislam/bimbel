@@ -1,58 +1,48 @@
 <?php
-// Konfigurasi database
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "bimbel"; // Nama database Anda
-
-// Membuat koneksi ke MySQL
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Cek koneksi
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-// Inisialisasi pesan sukses atau error
-$success = $error = "";
+include 'koneksi.php'; // Pastikan file koneksi.php tidak bermasalah
 
 // Proses form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Ambil data dari form
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']);
 
     // Validasi input
     if (empty($username) || empty($password)) {
-        $error = "Username dan Password harus diisi.";
+        die("Username dan Password harus diisi.");
     } else {
-        // Cek apakah username sudah ada
-        $check_sql = "SELECT * FROM users WHERE username = '$username'";
-        $check_result = $conn->query($check_sql);
+        // Cek apakah username sudah ada menggunakan prepared statement
+        $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
+        $stmt->bind_param("s", $username);
+        $stmt->execute();
+        $check_result = $stmt->get_result();
 
         if ($check_result->num_rows > 0) {
-            // Jika username sudah terdaftar, arahkan ke landing page
-            header("Location: http://localhost/bimbel/landingpage/landingpage.php?#hi-$username");
+            // Jika username sudah terdaftar
+            header("Location: http://bimtrio.mif.myhost.id/landingpage/landingpage.php?#hi-$username");
             exit();
         } else {
-            // Jika username belum terdaftar, lakukan penyimpanan
-            $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
+            // Jika username belum terdaftar, lakukan penyimpanan dengan password hash
+            $hashed_password = password_hash($password, PASSWORD_BCRYPT); // Hash password
+            $stmt = $conn->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
+            $stmt->bind_param("ss", $username, $hashed_password);
 
-            if ($conn->query($sql) === TRUE) {
-                $success = "Registrasi berhasil! Anda akan diarahkan ke landing page.";
-                // Arahkan ke landing page setelah sukses
-                header("Location: http://localhost/bimbel/landingpage/landingpage.php?#hi-$username");
+            if ($stmt->execute()) {
+                header("Location: http://bimtrio.mif.myhost.id/landingpage/landingpage.php?#hi-$username");
                 exit();
             } else {
-                $error = "Error: " . $sql . "<br>" . $conn->error;
+                die("Error: " . $stmt->error);
             }
         }
+
+        $stmt->close();
     }
 }
 
 // Menutup koneksi
 $conn->close();
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -173,8 +163,8 @@ $conn->close();
 
     <script>
         // Validasi form sebelum submit
-        function validateForm() {
-            let username = document.getElementById('username').value;
-            let password = document.getElementById('password').value;
-            if (username === "" || password === "") {
-                aler
+        // function validateForm() {
+        //     let username = document.getElementById('username').value;
+        //     let password = document.getElementById('password').value;
+        //     if (username === "" || password === "") {
+        //         aler

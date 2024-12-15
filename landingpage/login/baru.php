@@ -1,9 +1,6 @@
 <?php
 // Koneksi ke database
-$conn = new mysqli("localhost", "root", "", "bimbel");
-if ($conn->connect_error) {
-    die("Koneksi gagal: " . $conn->connect_error);
-}
+include 'koneksi.php';
 
 // Data pengguna baru
 $username = 'admin'; // Gantilah dengan username yang sesuai
