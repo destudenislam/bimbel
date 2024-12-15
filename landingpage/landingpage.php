@@ -60,10 +60,10 @@
      Hallo, Selamat Datang
     </p>
     <div class="buttons">
-     <a class="btn btn-primary" href="#">
+     <a class="btn btn-primary" href="http://localhost/bimbel/landingpage/login/login.html">
       Daftar
      </a>
-     <a class="btn btn-secondary" href="#"> 
+     <a class="btn btn-secondary" href="http://localhost/bimbel/landingpage/login/login.html"> 
       Login
      </a>
     </div>
@@ -84,6 +84,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#002299" fill-opacity="1" d="M0,160L17.1,176C34.3,192,69,224,103,229.3C137.1,235,171,213,206,181.3C240,149,274,107,309,80C342.9,53,377,43,411,48C445.7,53,480,75,514,112C548.6,149,583,203,617,192C651.4,181,686,107,720,80C754.3,53,789,75,823,106.7C857.1,139,891,181,926,181.3C960,181,994,139,1029,149.3C1062.9,160,1097,224,1131,208C1165.7,192,1200,96,1234,53.3C1268.6,11,1303,21,1337,53.3C1371.4,85,1406,139,1423,165.3L1440,192L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path></svg>
 
     <!-- Paket -->
+     
      <section id="paket">
      <div class="container">
    <div class="header">
@@ -92,51 +93,70 @@
    <div class="card-container">
     <div class="card">
      <div class="card-title">
-      Paket SD ( Kalas 1 )
+      Paket SD 
      </div>
      <img alt="Image of a teacher helping a student" height="200" src="https://storage.googleapis.com/a1aa/image/dtEGugprpkqvJBxqCfRYJNXZuTntnoXqn1U2QFOdmoX70d4JA.jpg" width="300"/>
      <div class="card-content">
-      blablablablablablaeeboublvii
-      <br/>
-      ohtweouhguhtwgoe
-      <br/>
-      wwaoiuhugywgvgjvfgouhefwhb prii o4oyo
-      <br/>
-      uewfgilhq3ri3qroiklhl
+      <br>
+     <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;1.Bahasa Indonesia</style>
+      
+      <p style="text-align: left;">&nbsp;&nbsp;&nbsp;2. Matematika</style>
+      
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;3. Ilmu Pengetahuan Alam (IPA)</style>
+      
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;4.ahasa inggris</style>
+      <div class="harga"
+        <h1>Rp.1.0000<h1> 
+      
+</div>
      </div>
-     <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
+     <a href="http://localhost/bimbel/landingpage/pembayaran1.php"><button class="card-button">
       Beli Paket
      </a>  
     </div>
     <div class="card">
      <div class="card-title">
-      Paket SMP ( Kelas 1 )
+      Paket SMP
      </div>
      <img alt="Image of a student studying with books" height="200" src="https://storage.googleapis.com/a1aa/image/6JNux1kivCquLBo2eVBvVlDfs1wQahwE90HBPNNvdKfnT3hnA.jpg" width="300"/>
      <div class="card-content">
-      blablablablablablaeeboublvii
-      <br/>
-      ohtweouhguhtwgoe
-      <br/>
-      wwaoiuhugywgvgjvfg
+      <br>
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;1.Bahasa Indonesia</style>
+      
+      <p style="text-align: left;">&nbsp;&nbsp;&nbsp;2. Matematika</style>
+      
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;3. Ilmu Pengetahuan Alam (IPA)</style>
+      
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;4.ahasa inggris</style>
+      <div class="harga"
+        <h1>Rp.1.0000<h1> 
+      
+</div>
      </div>
-     <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
+     <a href="http://localhost/bimbel/landingpage/pembayaran1.php"><button class="card-button">
       Beli Paket
      </a>  
     </div>
     <div class="card">
      <div class="card-title">
-      Paket SMA ( Kelas 1 )
+      Paket SMA 
      </div>
      <img alt="Image of a student raising hand in class" height="200" src="https://storage.googleapis.com/a1aa/image/ZyG37HuAnOISJ5j2SZqiBKd66E7B1kcwxM9QCeRgOkC60d4JA.jpg" width="300"/>
      <div class="card-content">
-      blablablablablablaeeboublvii
-      <br/>
-      ohtweouhguhtwgoe
-      <br/>
-      wwaoiuhugywgvgjvfg
+      <br>
+     <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;1.Bahasa Indonesia</style>
+      
+      <p style="text-align: left;">&nbsp;&nbsp;&nbsp;2. Matematika</style>
+      
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;3. Ilmu Pengetahuan Alam (IPA)</style>
+     
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;4.ahasa inggris</style>
+      <div class="harga"
+        <h1>Rp.1.0000<h1> 
+      
+</div>
      </div>
-     <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
+     <a href="http://localhost/bimbel/landingpage/pembayaran1.php"><button class="card-button">
       Beli Paket
      </a>  
     </div>
@@ -146,29 +166,24 @@
      </div>
      <img alt="Image of two students reading books" height="200" src="https://storage.googleapis.com/a1aa/image/MORCp972ygrHJlNYfeuU23GfT2B8ivb1Bv2O8i54QMPjT3hnA.jpg" width="300"/>
      <div class="card-content">
-      blablablablablablaeeboublvii
-      <br/>
-      ohtweouhguhtwgoe
-      <br/>
-      wwaoiuhugywgvgjvfg
+      <br>
+     <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;1.Bahasa Indonesia</style>
+      
+      <p style="text-align: left;">&nbsp;&nbsp;&nbsp;2. Matematika</style>
+      
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;3. Ilmu Pengetahuan Alam (IPA)</style>
+      
+      <p style="text-align: left; ">&nbsp;&nbsp;&nbsp;4.ahasa inggris</style>
+      <div class="harga"
+        <h1>Rp.1.0000<h1> 
+      
+</div>
      </div>
-     <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button class="card-button">
+     <a href="http://localhost/bimbel/landingpage/pembayaran1.php"><button class="card-button">
       Beli Paket
      </a>     
     </div>
-    <div class="large-card">
-     <!-- <img alt="Image of students raising hands in class"  src="https://storage.googleapis.com/a1aa/image/yEwbsHeJsZVKfkLYlIvEfoBOQaRkTD2ss1rc7Uzodo9xT3hnA.jpg" /> -->
-     <div class="large-card-title">
-      Lihat Semua
-      <br/>
-      Paket Belajar
-     </div>
-     <div>
-     <a href="http://localhost/bimbel/landingpage/pagepaket_selanjutnya.php"><button> <class= "panah">
-     >
-     </a> 
-     </i>
-     </div>
+    
      </section>
 
      <!-- keunggulan -->
@@ -217,8 +232,9 @@
   </div>
 </section>
 
-       <!-- rating -->
 
+
+       <!-- rating -->
        <section id="penilaian">
   <div class="container">
   <div class="title">
@@ -234,18 +250,13 @@
     <p>
      Kasih Nilai
     </p>
-    <div class="stars">
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-    </div>
+    <div class="stars" data-rating="0">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
    </div>
    <div class="profile">
     <h3>
@@ -255,18 +266,13 @@
     <p>
      Kasih Nilai
     </p>
-    <div class="stars">
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-    </div>
+    <div class="stars" data-rating="0">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
    </div>
    <div class="profile">
     <h3>
@@ -276,18 +282,13 @@
     <p>
      Kasih Nilai
     </p>
-    <div class="stars">
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-    </div>
+    <div class="stars" data-rating="0">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
     
    </div>
    <div class="profile">
@@ -298,20 +299,38 @@
     <p>
      Kasih Nilai
     </p>
-    <div class="stars">
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-     <i class="fas fa-star">
-     </i>
-    </div> 
+    <div class="stars" data-rating="0">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            
+              </div>
    </div>
   </div>
+  <script>
+    document.querySelectorAll('.stars').forEach(function(starContainer) {
+        starContainer.addEventListener('click', function(e) {
+            if (e.target.classList.contains('star')) {
+                const ratingValue = e.target.getAttribute('data-value');
+                updateStars(starContainer, ratingValue);
+                console.log(`Rating yang diberikan: ${ratingValue}`);
+            }
+        });
+    });
+
+    function updateStars(container, rating) {
+        const stars = container.querySelectorAll('.star');
+        stars.forEach(function(star, index) {
+            if (index < rating) {
+                star.classList.add('active');
+            } else {
+                star.classList.remove('active');
+            }
+        });
+    }
+</script>
   </section>
 
 
@@ -333,6 +352,7 @@
                     <li><i class="fab fa-twitter"></i>iugdcuguj</li>
                     <li><i class="fab fa-tiktok"></i>bimbletrio</li>
                 </ul>
+                
             </div>
         </div>
     </div>

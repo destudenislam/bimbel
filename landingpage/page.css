@@ -23,7 +23,8 @@
         border-color: black; 
         color: black;
         }
-* {
+* 
+{
          margin: 0;
          padding: 0;
          font-family: 'Roboto', sans-serif;
@@ -130,7 +131,8 @@
             padding-bottom: 100px;
           }
          #paket .container {
-              padding: 20px;
+              padding: 10px 1px;
+              
           }
           #paket .header {
               background-color: #ffffff;
@@ -142,15 +144,22 @@
               color: #0033cc;
               margin: 24px;
           }
+          #paket .harga{
+            font-size: 18px;
+            padding: 20px;
+            font-weight: bold;
+            text-align: center;
+          }
           #paket .card-container {
               display: flex;
-              justify-content: space-between;
+              justify-content:space-evenly ;
               margin-top: 20px;
+              /* justify-content:center */
           }
           #paket .card {
               background-color: #ffffff;
               border-radius: 20px;
-              width: 18%;
+              width: 22%;
               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
               overflow: hidden;
               text-align: center;
@@ -172,9 +181,10 @@
               border-radius: 20px;
           }
           #paket .card-content {
-              padding: 20px;
+              padding: auto;
               font-size: 14px;
               color: #333333;
+              text-align: left;
           }
           #paket .card-button {
               background-color: #0033cc;
@@ -222,12 +232,7 @@
           }
           #paket  .large-card-title i {
               margin-left: 10px;
-          }
-         #paket  .fas a{
-            text-decoration: none;
-            color: white;
-         }
-
+            }
      /* keunggulan */
 
        
@@ -242,7 +247,7 @@
         }
         #keunggulan  .container {
             background-color: white;
-            border: 2px solid #0000ff;
+            border: 2px solid black;
             border-radius: 10px;
             padding: 20px;
             width: 100%;
@@ -282,6 +287,7 @@
                  padding: 50px;
                  background-color: #000080;
                  margin: 0 100PX;
+                 border: 2px solid white;
 
              }
              #juara .title {
@@ -302,6 +308,8 @@
                  object-fit: cover;
                  margin-right: 40px;
                  margin-left: 40px;
+                 border: #333333;
+
              }
              #juara .user-details1 {
                  text-align: left;
@@ -338,7 +346,6 @@
                  margin: 0;
              }
   
-
   /* rating */
   #penilaian {
     background-color: #002299 ;
@@ -401,6 +408,17 @@
     background: white;
     border-radius: 50%;
 
+}
+
+#penilaian .star {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ccc; /* Bintang default (abu-abu) */
+}
+
+#penilaian .star:hover,
+#penilaian .star.active {
+    color: gold; /* Bintang yang aktif atau di-hover */
 }
 
 /* tentang kami */

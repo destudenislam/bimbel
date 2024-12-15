@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Kami</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #002d80;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .profile {
+            display: inline-block;
+            background-color: white;
+            color: black;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+        }
+
+        .profile h3 {
+            margin: 0;
+        }
+
+        .profile img {
+            border-radius: 100%;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .star {
+            font-size: 30px;
+            cursor: pointer;
+            color: #ccc; /* Bintang default (abu-abu) */
+        }
+
+        .star:hover,
+        .star.active {
+            color: gold; /* Bintang yang aktif atau di-hover */
+        }
+    </style>
+</head>
+<body>
+
+<section id="penilaian">
+    <div class="container">
+        <div class="title">Rate kami</div>
+
+        <div class="profile">
+            <h3>mr. Josep</h3>
+            <img src="https://storage.googleapis.com/a1aa/image/kkTInrKXoiLSMBOUpn3UM1fPCBt0G1elO260dhe2kifJpBJPB.jpg" width="200" height="200"/>
+            <p>Kasih Nilai</p>
+            <div class="stars" data-rating="0">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+
+        <div class="profile">
+            <h3>Nisa Kisniadewi</h3>
+            <img src="https://storage.googleapis.com/a1aa/image/WKcRwIpt7vb0LZVVRQzk4m2SpWlFQGTFRqwbHRPGBHeHNI5JA.jpg" width="200" height="250"/>
+            <p>Kasih Nilai</p>
+            <div class="stars" data-rating="0">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+
+        <div class="profile">
+            <h3>Adinda Cristian</h3>
+            <img src="https://storage.googleapis.com/a1aa/image/EM741ogTjNp3EFRfgPK9vwBBM5MHqiM3rvMbV17O5OLINI5JA.jpg" width="200" height="250"/>
+            <p>Kasih Nilai</p>
+            <div class="stars" data-rating="0">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.stars').forEach(function(starContainer) {
+        starContainer.addEventListener('click', function(e) {
+            if (e.target.classList.contains('star')) {
+                const ratingValue = e.target.getAttribute('data-value');
+                updateStars(starContainer, ratingValue);
+                console.log(`Rating yang diberikan: ${ratingValue}`);
+            }
+        });
+    });
+
+    function updateStars(container, rating) {
+        const stars = container.querySelectorAll('.star');
+        stars.forEach(function(star, index) {
+            if (index < rating) {
+                star.classList.add('active');
+            } else {
+                star.classList.remove('active');
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
