@@ -60,10 +60,10 @@
      Hallo, Selamat Datang
     </p>
     <div class="buttons">
-     <a class="btn btn-primary" href="http://localhost/bimbel/landingpage/login/login.html">
+     <a class="btn btn-primary" href="http://localhost/bimbel/landingpage/login/login.php">
       Daftar
      </a>
-     <a class="btn btn-secondary" href="http://localhost/bimbel/landingpage/login/login.html"> 
+     <a class="btn btn-secondary" href="http://localhost/bimbel/landingpage/login/login.php"> 
       Login
      </a>
     </div>
@@ -110,7 +110,7 @@
       
 </div>
      </div>
-     <a href="http://localhost/bimbel/landingpage/pembayaran1.php"><button class="card-button">
+     <a href="http://localhost/bimbel/landingpage/kelas_sd.php"><button class="card-button">
       Beli Paket
      </a>  
     </div>
@@ -133,7 +133,7 @@
       
 </div>
      </div>
-     <a href="http://localhost/bimbel/landingpage/pembayaran1.php"><button class="card-button">
+     <a href="http://localhost/bimbel/landingpage/kelas_smp.php"><button class="card-button">
       Beli Paket
      </a>  
     </div>
@@ -156,7 +156,7 @@
       
 </div>
      </div>
-     <a href="http://localhost/bimbel/landingpage/pembayaran1.php"><button class="card-button">
+     <a href="http://localhost/bimbel/landingpage/kelas_sma.php"><button class="card-button">
       Beli Paket
      </a>  
     </div>
@@ -204,26 +204,26 @@
  
   <div class="container">
    <div class="title">
-    Pengalaman Juara Pengguna
+    Alumni Bimble Trio
    </div>
    <div class="user-experience1">
     <img class="picture2" alt="Portrait of a woman with long hair, wearing a white sweater, looking at the camera" height="150" src="https://storage.googleapis.com/a1aa/image/wpXfgnAt3R0RHigAqYjXnOZU4kfyZFm2U03x7Tjxyerc9LlnA.jpg" width="150"/>
     <div class="user-details1">
      <h3>
-      Dasha Taran
+      Zara Anindita
      </h3>
      <p>
-      whdvgqdwidlwqjhgjytqefgujbhfewyifgukefbknwelfkuighwefiygiygewkfjb ndhwyejxjndbsvgedwujhbdeftguewiyudkjshgedcdqgwyhbfehejygdjnbhf eiudscvgiufwedcgwjvhbedsjcyetuydgikwguewdfweifgygeibfekj,cbjeygguk kefwuubefwbbuigefwjbuifewgdjbecdnhbiuywkhbfeckjbge
+     "Bimbel ini bukan hanya tempat belajar, tetapi juga tempat bertransformasi menjadi versi terbaik dari diri saya, saya bangga karena bukan hanya mendapatkan ilmu, tapi juga pengalaman dan teman-teman yang seru. "
      </p>
     </div>
    </div>
    <div class="user-experience2">
     <div class="user-details2">
      <h3>
-      Kim Jong Un
+      Aidan Pratama
      </h3>
      <p>
-      whdvgqdwidlwqjhgjytqefgujbhfewyifgukefbknwelfkuighwefiygiygewkfjb ndhwyejxjndbsvgedwujhbdeftguewiyudkjshgedcdqgwyhbfehejygdjnbhf eiudscvgiufwedcgwjvhbedsjcyetuydgikwguewdfweifgygeibfekj,cbjeygguk kefwuubefwbbuigefwjbuifewgdjbecdnhbiuywkhbfeckjbge
+     "Bimbingan yang diberikan sangat berharga, membuat saya lebih siap menghadapi ujian dan tantangan yang ada."
      </p>
     </div>
     <img class="picture1" alt="Portrait of a man with short hair, wearing a suit and tie, smiling at the camera" height="150" src="https://storage.googleapis.com/a1aa/image/xBil87sHUexteUCjqGpz5IsJwgdnIYE3fJep2FWMSRJ26XKPB.jpg" width="150"/>
@@ -276,7 +276,7 @@
    </div>
    <div class="profile">
     <h3>
-      Adinda Cristian
+      Agus Wijaya
     </h3>
     <img alt="Profile picture of Adinda Cristian" height="250" src="https://storage.googleapis.com/a1aa/image/EM741ogTjNp3EFRfgPK9vwBBM5MHqiM3rvMbV17O5OLINI5JA.jpg" width="200"/>
     <p>
@@ -293,7 +293,7 @@
    </div>
    <div class="profile">
     <h3>
-      Adinda Cristian
+      Siti Rahmawati
     </h3>
     <img alt="Profile picture of Adinda Cristian" height="250" src="https://storage.googleapis.com/a1aa/image/WKcRwIpt7vb0LZVVRQzk4m2SpWlFQGTFRqwbHRPGBHeHNI5JA.jpg" width="200"/>
     <p>

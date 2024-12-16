@@ -1,4 +1,36 @@
 <html>
+    <?php include "koneksi.php";
+    
+    
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $nama = $_POST['nama'];
+        $tgl_lahir = $_POST['tgl_lahir'];
+        $alamat = $_POST['alamat'];
+        $no_tlp = $_POST['no_tlp'];
+        $asal_sekolah = $_POST['asal_sekolah'];
+    
+        // Proses file upload
+        $upload_dir = "uploads/";
+        $file_name = basename($_FILES['buktiPembayaran']['name']);
+        $file_path = $upload_dir . $file_name;
+    
+        if (move_uploaded_file($_FILES['buktiPembayaran']['tmp_name'], $file_path)) {
+            // Query untuk menyimpan data
+            $sql = "INSERT INTO submissions (nama, tgl_lahir, alamat, no_tlp, asal_sekolah, bukti_pembayaran) 
+                    VALUES ('$nama', '$tgl_lahir', '$alamat', '$no_tlp', '$asal_sekolah', '$file_path')";
+    
+            if ($conn->query($sql) === TRUE) {
+                echo "Data berhasil disimpan!";
+            } else {
+                echo "Error: " . $conn->error;
+            }
+        } else {
+            echo "Gagal mengupload file.";
+        }
+    }
+    
+    $conn->close();
+    ?>
 <head>
     <title>Isi Form</title>
     <style>
@@ -93,27 +125,39 @@
 <body>
     <div class="container">
         <h2>Isi Form</h2>
-        <div class="form-group">
-            <input type="text" placeholder="nama">
-        </div>
-        <div class="form-group">
-            <input type="text" placeholder="Tanggal Lahir">
-        </div>
-        <div class="form-group">
-            <input type="text" placeholder="Alamat">
-        </div>
-        <div class="form-group">
-            <input type="text" placeholder="No Tlp">
-        </div>
-        <div class="form-group">
-            <input type="text" placeholder="Asal Sekolah">
-        </div>
-        <div class="file-input">
-    <label for="buktiPembayaran">Bukti Pembayaran</label>
-    <input type="file" id="buktiPembayaran" name="buktiPembayaran" accept=".jpg,.jpeg,.png,.pdf" onchange="updateFileLabel(this)" hidden>
-    <span class="file-label" onclick="document.getElementById('buktiPembayaran').click()">Pilih file</span>
-</div><br><div class="submit-btn"> 
-            <button>Selesai</button>
+        <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" name="nama" id="nama" placeholder="Nama" required>
+            </div>
+            <div class="form-group">
+                <label for="tgl_lahir">Tanggal Lahir</label>
+                <input type="date" name="tgl_lahir" id="tgl_lahir" placeholder="Tanggal Lahir" required>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <input type="text" name="alamat" id="alamat" placeholder="Alamat" required>
+            </div>
+            <div class="form-group">
+                <label for="no_tlp">No Telepon</label>
+                <input type="text" name="no_tlp" id="no_tlp" placeholder="No Telepon" required>
+            </div>
+            <div class="form-group">
+                <label for="asal_sekolah">Asal Sekolah</label>
+                <input type="text" name="asal_sekolah" id="asal_sekolah" placeholder="Asal Sekolah" required>
+            </div>
+            <div class="file-input">
+                <label for="buktiPembayaran">Bukti Pembayaran</label>
+                <input type="file" id="buktiPembayaran" name="buktiPembayaran" accept=".jpg,.jpeg,.png,.pdf" hidden>
+                <span class="file-label" onclick="document.getElementById('buktiPembayaran').click()">Pilih file</span>
+            </div>
+            <br>
+            <div class="submit-btn">
+                <button type="submit">Selesai</button>
+            </div>
+        </form>
+   
+   
         </div>
     </div>
 </body>

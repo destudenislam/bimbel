@@ -1,0 +1,27 @@
+/* Gaya untuk tombol kelas */
+#sd .kelas {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* Gaya untuk tombol aktif (dipilih) */
+#sd .kelas.active {
+    border: 1px solid blue;
+    color: blue;
+    font-weight: bold;
+}
+
+/* Gaya untuk tombol Simpan */
+#sd .simpan {
+    padding: 10px 20px;
+    background-color: #d35400;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
